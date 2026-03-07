@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import AIAdvisor from './AIAdvisor';
 import DatasetUpload from './DatasetUpload';
 import AnalyticsDashboard from './AnalyticsDashboard';
-import { Route, LayoutDashboard, MessageSquare } from 'lucide-react';
+import DataAnalytics from './DataAnalytics';
+import { Route, LayoutDashboard, MessageSquare, BarChart2 } from 'lucide-react';
 
 function App() {
   const [initialQueryText, setInitialQueryText] = useState("");
@@ -23,8 +24,8 @@ function App() {
       <nav className="border-b border-[#3a3328] bg-[#1c1a16]/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex flex-shrink-0 items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#c4a882] to-[#9b8566] p-1.5 flex items-center justify-center shadow-lg shadow-[#c4a882]/20">
+            <div className="flex shrink-0 items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-linear-to-br from-[#c4a882] to-[#9b8566] p-1.5 flex items-center justify-center shadow-lg shadow-[#c4a882]/20">
                 <svg viewBox="0 0 24 24" fill="none" stroke="#141210" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                 </svg>
@@ -39,8 +40,8 @@ function App() {
               <button
                 onClick={() => setActiveTab("operations")}
                 className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeTab === "operations"
-                    ? "bg-[#c4a882]/10 text-[#d4b896]"
-                    : "text-[#c4a882]/60 hover:text-[#c4a882] hover:bg-[#3a3328]/50"
+                  ? "bg-[#c4a882]/10 text-[#d4b896]"
+                  : "text-[#c4a882]/60 hover:text-[#c4a882] hover:bg-[#3a3328]/50"
                   }`}
               >
                 <LayoutDashboard className="w-4 h-4" />
@@ -49,12 +50,22 @@ function App() {
               <button
                 onClick={() => setActiveTab("analytics")}
                 className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeTab === "analytics"
-                    ? "bg-[#c4a882]/10 text-[#d4b896]"
-                    : "text-[#c4a882]/60 hover:text-[#c4a882] hover:bg-[#3a3328]/50"
+                  ? "bg-[#c4a882]/10 text-[#d4b896]"
+                  : "text-[#c4a882]/60 hover:text-[#c4a882] hover:bg-[#3a3328]/50"
                   }`}
               >
                 <Route className="w-4 h-4" />
-                Analytics & Routing
+                Forecasting & Routing
+              </button>
+              <button
+                onClick={() => setActiveTab("data")}
+                className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${activeTab === "data"
+                  ? "bg-[#c4a882]/10 text-[#d4b896]"
+                  : "text-[#c4a882]/60 hover:text-[#c4a882] hover:bg-[#3a3328]/50"
+                  }`}
+              >
+                <BarChart2 className="w-4 h-4" />
+                Data Insights
               </button>
             </div>
 
@@ -88,9 +99,13 @@ function App() {
               </div>
             </div>
           </>
-        ) : (
+        ) : activeTab === "analytics" ? (
           <div className="flex-1 h-full min-h-0 relative z-10 w-full">
             <AnalyticsDashboard />
+          </div>
+        ) : (
+          <div className="flex-1 h-full min-h-0 relative z-10 w-full">
+            <DataAnalytics />
           </div>
         )}
       </main>

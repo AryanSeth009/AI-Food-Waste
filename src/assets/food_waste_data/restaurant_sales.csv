@@ -1,0 +1,501 @@
+Order ID,Date,Restaurant,Item Name,Category,Unit Price (₹),Quantity,Total Amount (₹),Payment Mode,Food Waste (kg)
+1,2023-12-27,Mumbai Tadka,Ice Cream,Dessert,80,10,800,Card,0.12
+2,2023-07-07,Mumbai Tadka,Idli Sambar,Breakfast,90,4,360,UPI,2.07
+3,2023-08-11,Hotel Sai,Idli Sambar,Breakfast,90,4,360,UPI,1.36
+4,2023-07-26,Spice Garden,Gulab Jamun,Dessert,60,3,180,UPI,1.71
+5,2023-07-27,Mumbai Tadka,Ice Cream,Dessert,80,6,480,UPI,1.87
+6,2023-11-05,Mumbai Tadka,Masala Dosa,Breakfast,120,7,840,Online,2.07
+7,2023-06-13,Mumbai Tadka,Ice Cream,Dessert,80,7,560,Card,1.7
+8,2023-06-15,Green Bowl,Masala Dosa,Breakfast,120,1,120,Online,1.36
+9,2023-11-12,Green Bowl,Idli Sambar,Breakfast,90,1,90,Card,2.01
+10,2023-11-06,Taste of India,Vada Pav,Snacks,40,5,200,UPI,0.39
+11,2023-09-04,Green Bowl,Veg Biryani,Main Course,180,10,1800,Cash,1.95
+12,2023-11-04,Green Bowl,Paneer Butter Masala,Main Course,200,8,1600,Cash,1.69
+13,2023-04-10,Spice Garden,Idli Sambar,Breakfast,90,10,900,Cash,1.25
+14,2023-05-12,Hotel Sai,Veg Biryani,Main Course,180,9,1620,Card,1.01
+15,2023-10-18,Green Bowl,Chicken Biryani,Main Course,220,6,1320,UPI,0.74
+16,2023-09-08,Mumbai Tadka,Idli Sambar,Breakfast,90,1,90,Online,1.39
+17,2023-07-04,Taste of India,Dal Tadka,Main Course,150,3,450,Online,1.5
+18,2023-09-19,Mumbai Tadka,Vada Pav,Snacks,40,10,400,Online,2.32
+19,2023-01-15,Spice Garden,Vada Pav,Snacks,40,7,280,UPI,0.62
+20,2023-02-28,Hotel Sai,Ice Cream,Dessert,80,1,80,UPI,0.42
+21,2023-08-07,Green Bowl,Chicken Biryani,Main Course,220,3,660,Card,0.19
+22,2023-05-08,Hotel Sai,Veg Biryani,Main Course,180,6,1080,Card,1.08
+23,2023-01-29,Green Bowl,Paneer Butter Masala,Main Course,200,1,200,Online,0.22
+24,2023-03-04,Taste of India,Ice Cream,Dessert,80,1,80,UPI,0.73
+25,2023-08-15,Taste of India,Gulab Jamun,Dessert,60,3,180,Card,0.28
+26,2023-03-15,Spice Garden,Paneer Butter Masala,Main Course,200,5,1000,Cash,1.51
+27,2023-08-13,Mumbai Tadka,Vada Pav,Snacks,40,10,400,Online,1.26
+28,2023-05-16,Spice Garden,Ice Cream,Dessert,80,3,240,UPI,1.43
+29,2023-06-18,Mumbai Tadka,Idli Sambar,Breakfast,90,1,90,Card,1.8
+30,2023-10-08,Green Bowl,Dal Tadka,Main Course,150,3,450,Card,1.78
+31,2023-12-03,Mumbai Tadka,Paneer Butter Masala,Main Course,200,6,1200,Online,1.76
+32,2023-09-18,Taste of India,Pav Bhaji,Snacks,100,8,800,Card,2.08
+33,2023-04-03,Hotel Sai,Chai,Beverages,30,7,210,UPI,1.05
+34,2023-10-31,Hotel Sai,Pav Bhaji,Snacks,100,4,400,Online,1.07
+35,2023-03-12,Mumbai Tadka,Masala Dosa,Breakfast,120,5,600,Online,2.26
+36,2023-07-03,Green Bowl,Idli Sambar,Breakfast,90,9,810,UPI,2.22
+37,2023-06-30,Taste of India,Masala Dosa,Breakfast,120,10,1200,Card,2.11
+38,2023-11-28,Green Bowl,Paneer Butter Masala,Main Course,200,10,2000,Card,2.41
+39,2023-02-06,Mumbai Tadka,Paneer Butter Masala,Main Course,200,8,1600,Cash,0.58
+40,2023-05-25,Mumbai Tadka,Masala Dosa,Breakfast,120,4,480,Card,2.2
+41,2023-01-14,Spice Garden,Lassi,Beverages,70,10,700,Card,0.71
+42,2023-02-21,Taste of India,Idli Sambar,Breakfast,90,6,540,UPI,1.0
+43,2023-06-08,Green Bowl,Masala Dosa,Breakfast,120,2,240,Cash,1.59
+44,2023-09-04,Taste of India,Ice Cream,Dessert,80,7,560,Online,1.32
+45,2023-02-25,Taste of India,Masala Dosa,Breakfast,120,9,1080,Cash,0.22
+46,2023-02-15,Green Bowl,Dal Tadka,Main Course,150,6,900,Online,0.13
+47,2023-09-21,Taste of India,Pav Bhaji,Snacks,100,7,700,Online,1.39
+48,2023-02-17,Green Bowl,Ice Cream,Dessert,80,7,560,Card,1.41
+49,2023-11-16,Spice Garden,Lassi,Beverages,70,9,630,Cash,0.74
+50,2023-06-30,Mumbai Tadka,Paneer Butter Masala,Main Course,200,8,1600,Card,1.24
+51,2023-02-24,Green Bowl,Vada Pav,Snacks,40,3,120,Online,0.33
+52,2023-01-12,Mumbai Tadka,Chai,Beverages,30,7,210,Cash,2.09
+53,2023-07-09,Mumbai Tadka,Pav Bhaji,Snacks,100,7,700,Cash,1.49
+54,2023-12-25,Taste of India,Pav Bhaji,Snacks,100,9,900,Cash,0.87
+55,2023-11-15,Spice Garden,Masala Dosa,Breakfast,120,9,1080,Online,1.74
+56,2023-04-06,Taste of India,Chai,Beverages,30,10,300,UPI,0.5
+57,2023-10-16,Hotel Sai,Chai,Beverages,30,7,210,Online,2.01
+58,2023-01-20,Spice Garden,Lassi,Beverages,70,2,140,Online,0.38
+59,2023-09-06,Taste of India,Chicken Biryani,Main Course,220,8,1760,Card,0.78
+60,2023-01-07,Taste of India,Paneer Butter Masala,Main Course,200,6,1200,Online,2.32
+61,2023-12-13,Spice Garden,Veg Biryani,Main Course,180,6,1080,Card,1.33
+62,2023-07-22,Mumbai Tadka,Gulab Jamun,Dessert,60,10,600,Cash,2.3
+63,2023-04-28,Mumbai Tadka,Idli Sambar,Breakfast,90,2,180,UPI,1.14
+64,2023-08-03,Spice Garden,Chicken Biryani,Main Course,220,9,1980,UPI,1.4
+65,2023-07-03,Hotel Sai,Dal Tadka,Main Course,150,3,450,Card,0.45
+66,2023-06-21,Spice Garden,Chai,Beverages,30,5,150,UPI,2.38
+67,2023-07-09,Spice Garden,Ice Cream,Dessert,80,10,800,UPI,1.94
+68,2023-01-15,Green Bowl,Idli Sambar,Breakfast,90,4,360,Cash,1.74
+69,2023-10-02,Hotel Sai,Gulab Jamun,Dessert,60,3,180,UPI,2.03
+70,2023-01-11,Mumbai Tadka,Idli Sambar,Breakfast,90,5,450,Card,0.19
+71,2023-12-17,Mumbai Tadka,Chai,Beverages,30,2,60,Cash,0.33
+72,2023-11-13,Spice Garden,Ice Cream,Dessert,80,1,80,Card,0.55
+73,2023-06-13,Spice Garden,Idli Sambar,Breakfast,90,5,450,Cash,0.55
+74,2023-07-16,Spice Garden,Gulab Jamun,Dessert,60,1,60,UPI,2.1
+75,2023-11-02,Hotel Sai,Veg Biryani,Main Course,180,3,540,UPI,0.21
+76,2023-05-24,Mumbai Tadka,Ice Cream,Dessert,80,9,720,Online,2.28
+77,2023-05-07,Hotel Sai,Vada Pav,Snacks,40,10,400,Online,2.36
+78,2023-05-30,Taste of India,Chicken Biryani,Main Course,220,9,1980,Card,1.49
+79,2023-12-28,Green Bowl,Ice Cream,Dessert,80,2,160,Card,1.33
+80,2023-12-18,Green Bowl,Gulab Jamun,Dessert,60,5,300,Online,1.46
+81,2023-09-27,Hotel Sai,Vada Pav,Snacks,40,5,200,Online,1.44
+82,2023-12-28,Green Bowl,Gulab Jamun,Dessert,60,5,300,UPI,1.18
+83,2023-05-25,Green Bowl,Masala Dosa,Breakfast,120,10,1200,UPI,1.1
+84,2023-12-03,Taste of India,Chicken Biryani,Main Course,220,8,1760,UPI,1.09
+85,2023-02-03,Spice Garden,Idli Sambar,Breakfast,90,2,180,UPI,0.79
+86,2023-11-22,Hotel Sai,Dal Tadka,Main Course,150,2,300,Card,2.07
+87,2023-02-02,Hotel Sai,Masala Dosa,Breakfast,120,2,240,Cash,2.01
+88,2023-12-05,Taste of India,Chai,Beverages,30,8,240,UPI,1.94
+89,2023-11-23,Spice Garden,Ice Cream,Dessert,80,5,400,Cash,1.59
+90,2023-11-17,Hotel Sai,Pav Bhaji,Snacks,100,2,200,Online,0.64
+91,2023-12-04,Taste of India,Ice Cream,Dessert,80,2,160,Card,1.43
+92,2023-07-30,Spice Garden,Ice Cream,Dessert,80,5,400,Card,0.57
+93,2023-11-12,Taste of India,Chai,Beverages,30,5,150,Cash,0.49
+94,2023-03-16,Green Bowl,Lassi,Beverages,70,5,350,UPI,1.1
+95,2023-06-07,Mumbai Tadka,Dal Tadka,Main Course,150,6,900,Card,0.34
+96,2023-01-12,Taste of India,Pav Bhaji,Snacks,100,4,400,UPI,1.26
+97,2023-09-21,Spice Garden,Ice Cream,Dessert,80,4,320,Card,1.0
+98,2023-11-20,Hotel Sai,Lassi,Beverages,70,8,560,Online,2.19
+99,2023-11-04,Green Bowl,Gulab Jamun,Dessert,60,5,300,UPI,0.77
+100,2023-08-05,Green Bowl,Paneer Butter Masala,Main Course,200,7,1400,UPI,1.58
+101,2023-07-11,Spice Garden,Paneer Butter Masala,Main Course,200,2,400,Cash,2.42
+102,2023-05-28,Hotel Sai,Dal Tadka,Main Course,150,2,300,Cash,2.46
+103,2023-06-20,Hotel Sai,Dal Tadka,Main Course,150,1,150,Online,1.06
+104,2023-02-11,Green Bowl,Chicken Biryani,Main Course,220,2,440,Cash,1.69
+105,2023-01-06,Taste of India,Ice Cream,Dessert,80,8,640,Online,2.06
+106,2023-08-10,Spice Garden,Paneer Butter Masala,Main Course,200,5,1000,UPI,0.84
+107,2023-06-14,Spice Garden,Veg Biryani,Main Course,180,2,360,Cash,1.81
+108,2023-03-17,Spice Garden,Chicken Biryani,Main Course,220,7,1540,UPI,2.11
+109,2023-10-27,Taste of India,Ice Cream,Dessert,80,7,560,Cash,1.57
+110,2023-10-25,Taste of India,Veg Biryani,Main Course,180,9,1620,UPI,0.13
+111,2023-07-12,Hotel Sai,Veg Biryani,Main Course,180,5,900,Cash,0.9
+112,2023-09-02,Spice Garden,Vada Pav,Snacks,40,2,80,UPI,1.24
+113,2023-06-14,Hotel Sai,Ice Cream,Dessert,80,3,240,Online,0.89
+114,2023-02-13,Spice Garden,Masala Dosa,Breakfast,120,6,720,Cash,1.72
+115,2023-07-01,Taste of India,Gulab Jamun,Dessert,60,3,180,Card,1.52
+116,2023-11-28,Green Bowl,Paneer Butter Masala,Main Course,200,6,1200,Card,1.37
+117,2023-04-01,Green Bowl,Idli Sambar,Breakfast,90,7,630,Online,2.17
+118,2023-11-05,Spice Garden,Pav Bhaji,Snacks,100,6,600,Cash,0.77
+119,2023-07-02,Mumbai Tadka,Lassi,Beverages,70,7,490,Card,0.47
+120,2023-09-12,Green Bowl,Masala Dosa,Breakfast,120,2,240,Cash,0.68
+121,2023-06-03,Hotel Sai,Veg Biryani,Main Course,180,9,1620,Cash,1.07
+122,2023-10-13,Mumbai Tadka,Vada Pav,Snacks,40,1,40,Cash,1.88
+123,2023-10-01,Mumbai Tadka,Ice Cream,Dessert,80,3,240,UPI,2.29
+124,2023-02-11,Spice Garden,Lassi,Beverages,70,10,700,UPI,0.12
+125,2023-10-19,Taste of India,Dal Tadka,Main Course,150,9,1350,Card,0.83
+126,2023-05-24,Hotel Sai,Paneer Butter Masala,Main Course,200,2,400,Online,2.37
+127,2023-06-02,Spice Garden,Veg Biryani,Main Course,180,2,360,UPI,0.74
+128,2023-12-24,Spice Garden,Dal Tadka,Main Course,150,2,300,Online,1.52
+129,2023-06-24,Mumbai Tadka,Paneer Butter Masala,Main Course,200,6,1200,Online,1.88
+130,2023-02-23,Spice Garden,Veg Biryani,Main Course,180,10,1800,UPI,0.13
+131,2023-10-10,Mumbai Tadka,Lassi,Beverages,70,5,350,Cash,0.8
+132,2023-07-01,Hotel Sai,Dal Tadka,Main Course,150,8,1200,UPI,2.26
+133,2023-02-02,Green Bowl,Paneer Butter Masala,Main Course,200,4,800,UPI,1.92
+134,2023-09-18,Taste of India,Chai,Beverages,30,2,60,UPI,0.99
+135,2023-11-23,Hotel Sai,Lassi,Beverages,70,3,210,Cash,2.37
+136,2023-08-01,Green Bowl,Veg Biryani,Main Course,180,2,360,Card,0.65
+137,2023-02-08,Hotel Sai,Chai,Beverages,30,6,180,Online,2.46
+138,2023-11-23,Spice Garden,Idli Sambar,Breakfast,90,5,450,UPI,1.79
+139,2023-01-13,Green Bowl,Vada Pav,Snacks,40,4,160,Online,2.27
+140,2023-03-04,Spice Garden,Pav Bhaji,Snacks,100,1,100,Cash,0.46
+141,2023-12-08,Spice Garden,Paneer Butter Masala,Main Course,200,4,800,Online,1.19
+142,2023-06-01,Taste of India,Veg Biryani,Main Course,180,3,540,UPI,0.55
+143,2023-08-13,Taste of India,Lassi,Beverages,70,6,420,Cash,0.85
+144,2023-05-16,Spice Garden,Pav Bhaji,Snacks,100,4,400,Online,1.4
+145,2023-04-19,Mumbai Tadka,Masala Dosa,Breakfast,120,7,840,Cash,0.78
+146,2023-05-16,Spice Garden,Masala Dosa,Breakfast,120,4,480,Online,0.38
+147,2023-07-04,Mumbai Tadka,Masala Dosa,Breakfast,120,5,600,Online,1.21
+148,2023-01-03,Hotel Sai,Chai,Beverages,30,3,90,Online,0.91
+149,2023-09-27,Spice Garden,Masala Dosa,Breakfast,120,8,960,UPI,1.6
+150,2023-11-05,Spice Garden,Vada Pav,Snacks,40,7,280,Card,2.5
+151,2023-10-28,Hotel Sai,Paneer Butter Masala,Main Course,200,2,400,Card,1.74
+152,2023-05-31,Hotel Sai,Vada Pav,Snacks,40,9,360,Card,1.06
+153,2023-12-21,Mumbai Tadka,Masala Dosa,Breakfast,120,8,960,Card,0.17
+154,2023-10-17,Mumbai Tadka,Paneer Butter Masala,Main Course,200,3,600,Cash,1.36
+155,2023-01-13,Green Bowl,Chicken Biryani,Main Course,220,2,440,UPI,0.15
+156,2023-01-22,Green Bowl,Chai,Beverages,30,1,30,UPI,2.17
+157,2023-07-25,Green Bowl,Masala Dosa,Breakfast,120,4,480,Online,1.88
+158,2023-07-25,Green Bowl,Gulab Jamun,Dessert,60,9,540,Cash,0.9
+159,2023-12-23,Taste of India,Dal Tadka,Main Course,150,3,450,Online,2.45
+160,2023-01-12,Mumbai Tadka,Idli Sambar,Breakfast,90,2,180,Card,1.3
+161,2023-01-08,Mumbai Tadka,Lassi,Beverages,70,1,70,Online,1.72
+162,2023-04-25,Spice Garden,Paneer Butter Masala,Main Course,200,7,1400,Card,0.42
+163,2023-08-20,Mumbai Tadka,Gulab Jamun,Dessert,60,5,300,Cash,1.71
+164,2023-01-04,Taste of India,Ice Cream,Dessert,80,7,560,Online,0.79
+165,2023-07-13,Mumbai Tadka,Idli Sambar,Breakfast,90,1,90,Card,1.64
+166,2023-02-28,Hotel Sai,Idli Sambar,Breakfast,90,2,180,Online,1.69
+167,2023-08-15,Hotel Sai,Vada Pav,Snacks,40,3,120,Online,1.59
+168,2023-04-09,Green Bowl,Masala Dosa,Breakfast,120,8,960,Cash,1.81
+169,2023-05-02,Green Bowl,Idli Sambar,Breakfast,90,4,360,Cash,1.89
+170,2023-03-08,Spice Garden,Gulab Jamun,Dessert,60,8,480,Online,0.62
+171,2023-05-03,Mumbai Tadka,Pav Bhaji,Snacks,100,9,900,UPI,0.1
+172,2023-06-19,Spice Garden,Lassi,Beverages,70,10,700,Card,1.45
+173,2023-04-16,Spice Garden,Chai,Beverages,30,6,180,Cash,1.68
+174,2023-01-13,Spice Garden,Masala Dosa,Breakfast,120,2,240,Online,1.03
+175,2023-05-25,Hotel Sai,Dal Tadka,Main Course,150,6,900,Card,1.83
+176,2023-06-02,Hotel Sai,Veg Biryani,Main Course,180,9,1620,Online,2.17
+177,2023-12-14,Green Bowl,Masala Dosa,Breakfast,120,7,840,Online,2.04
+178,2023-06-04,Hotel Sai,Pav Bhaji,Snacks,100,7,700,Card,1.57
+179,2023-05-06,Mumbai Tadka,Chicken Biryani,Main Course,220,6,1320,Online,0.85
+180,2023-05-08,Taste of India,Paneer Butter Masala,Main Course,200,9,1800,UPI,1.57
+181,2023-05-02,Hotel Sai,Ice Cream,Dessert,80,9,720,UPI,1.94
+182,2023-04-15,Hotel Sai,Masala Dosa,Breakfast,120,8,960,Online,2.06
+183,2023-03-27,Green Bowl,Lassi,Beverages,70,8,560,Cash,1.18
+184,2023-04-02,Green Bowl,Vada Pav,Snacks,40,9,360,Online,2.17
+185,2023-06-17,Hotel Sai,Pav Bhaji,Snacks,100,8,800,Online,2.21
+186,2023-09-20,Green Bowl,Gulab Jamun,Dessert,60,7,420,Card,0.57
+187,2023-03-30,Spice Garden,Idli Sambar,Breakfast,90,3,270,Cash,0.28
+188,2023-11-03,Hotel Sai,Paneer Butter Masala,Main Course,200,3,600,Cash,1.34
+189,2023-01-15,Hotel Sai,Vada Pav,Snacks,40,10,400,Cash,1.16
+190,2023-12-21,Mumbai Tadka,Veg Biryani,Main Course,180,10,1800,Online,2.02
+191,2023-10-26,Green Bowl,Vada Pav,Snacks,40,6,240,UPI,2.22
+192,2023-10-13,Taste of India,Chicken Biryani,Main Course,220,1,220,Cash,1.36
+193,2023-04-29,Green Bowl,Idli Sambar,Breakfast,90,4,360,Online,1.74
+194,2023-12-23,Mumbai Tadka,Chicken Biryani,Main Course,220,9,1980,Card,1.25
+195,2023-02-13,Taste of India,Chai,Beverages,30,1,30,Card,2.29
+196,2023-05-07,Spice Garden,Pav Bhaji,Snacks,100,7,700,Card,1.02
+197,2023-11-08,Hotel Sai,Masala Dosa,Breakfast,120,10,1200,Online,0.79
+198,2023-02-17,Mumbai Tadka,Chai,Beverages,30,7,210,Online,2.23
+199,2023-01-21,Taste of India,Masala Dosa,Breakfast,120,6,720,Card,1.18
+200,2023-08-24,Mumbai Tadka,Idli Sambar,Breakfast,90,3,270,Cash,0.42
+201,2023-07-15,Spice Garden,Paneer Butter Masala,Main Course,200,7,1400,Cash,0.93
+202,2023-06-23,Green Bowl,Ice Cream,Dessert,80,9,720,Online,2.32
+203,2023-04-22,Spice Garden,Chicken Biryani,Main Course,220,5,1100,Card,0.37
+204,2023-01-01,Green Bowl,Chicken Biryani,Main Course,220,10,2200,Card,1.69
+205,2023-05-01,Mumbai Tadka,Chai,Beverages,30,7,210,Online,0.77
+206,2023-03-30,Green Bowl,Gulab Jamun,Dessert,60,5,300,UPI,1.14
+207,2023-11-24,Mumbai Tadka,Ice Cream,Dessert,80,5,400,Cash,1.47
+208,2023-06-19,Taste of India,Dal Tadka,Main Course,150,2,300,Online,1.93
+209,2023-08-02,Mumbai Tadka,Chicken Biryani,Main Course,220,4,880,Online,1.99
+210,2023-04-03,Mumbai Tadka,Paneer Butter Masala,Main Course,200,2,400,UPI,1.39
+211,2023-04-04,Hotel Sai,Veg Biryani,Main Course,180,10,1800,UPI,1.41
+212,2023-09-18,Hotel Sai,Pav Bhaji,Snacks,100,8,800,UPI,1.4
+213,2023-05-26,Spice Garden,Vada Pav,Snacks,40,4,160,UPI,2.46
+214,2023-03-04,Hotel Sai,Ice Cream,Dessert,80,2,160,Card,1.11
+215,2023-05-04,Green Bowl,Pav Bhaji,Snacks,100,4,400,UPI,1.74
+216,2023-09-30,Spice Garden,Vada Pav,Snacks,40,3,120,Online,1.25
+217,2023-07-07,Mumbai Tadka,Chicken Biryani,Main Course,220,5,1100,Card,0.55
+218,2023-06-10,Hotel Sai,Idli Sambar,Breakfast,90,2,180,Cash,0.44
+219,2023-10-31,Taste of India,Pav Bhaji,Snacks,100,9,900,Cash,1.37
+220,2023-08-08,Green Bowl,Masala Dosa,Breakfast,120,9,1080,Online,2.48
+221,2023-12-30,Green Bowl,Masala Dosa,Breakfast,120,1,120,Online,0.21
+222,2023-03-10,Hotel Sai,Lassi,Beverages,70,2,140,Card,1.63
+223,2023-10-22,Hotel Sai,Ice Cream,Dessert,80,5,400,Cash,1.66
+224,2023-05-17,Green Bowl,Vada Pav,Snacks,40,2,80,Card,0.46
+225,2023-11-27,Green Bowl,Pav Bhaji,Snacks,100,8,800,Cash,0.18
+226,2023-12-09,Hotel Sai,Gulab Jamun,Dessert,60,7,420,Cash,0.45
+227,2023-03-12,Green Bowl,Chai,Beverages,30,6,180,Card,2.39
+228,2023-10-16,Green Bowl,Gulab Jamun,Dessert,60,4,240,Cash,1.67
+229,2023-08-12,Hotel Sai,Gulab Jamun,Dessert,60,7,420,Card,0.17
+230,2023-11-17,Green Bowl,Vada Pav,Snacks,40,4,160,Online,1.1
+231,2023-01-08,Spice Garden,Chai,Beverages,30,2,60,Cash,0.34
+232,2023-09-17,Hotel Sai,Gulab Jamun,Dessert,60,4,240,Cash,1.46
+233,2023-03-30,Spice Garden,Gulab Jamun,Dessert,60,2,120,Cash,0.4
+234,2023-09-20,Spice Garden,Ice Cream,Dessert,80,10,800,Card,1.78
+235,2023-05-27,Mumbai Tadka,Chai,Beverages,30,1,30,Online,2.48
+236,2023-08-14,Taste of India,Idli Sambar,Breakfast,90,4,360,UPI,1.42
+237,2023-08-19,Spice Garden,Dal Tadka,Main Course,150,7,1050,UPI,1.3
+238,2023-06-28,Hotel Sai,Veg Biryani,Main Course,180,3,540,Online,1.71
+239,2023-08-20,Hotel Sai,Veg Biryani,Main Course,180,4,720,Cash,1.87
+240,2023-04-06,Green Bowl,Veg Biryani,Main Course,180,4,720,Cash,1.42
+241,2023-11-03,Green Bowl,Masala Dosa,Breakfast,120,1,120,Cash,2.27
+242,2023-03-20,Mumbai Tadka,Pav Bhaji,Snacks,100,4,400,UPI,1.79
+243,2023-07-21,Mumbai Tadka,Paneer Butter Masala,Main Course,200,1,200,Online,1.64
+244,2023-03-13,Hotel Sai,Chai,Beverages,30,6,180,Online,1.82
+245,2023-10-01,Mumbai Tadka,Pav Bhaji,Snacks,100,9,900,UPI,0.16
+246,2023-03-13,Taste of India,Dal Tadka,Main Course,150,10,1500,Cash,0.97
+247,2023-05-28,Green Bowl,Gulab Jamun,Dessert,60,6,360,Card,1.09
+248,2023-05-31,Mumbai Tadka,Dal Tadka,Main Course,150,6,900,Cash,1.3
+249,2023-03-02,Taste of India,Lassi,Beverages,70,3,210,Online,2.03
+250,2023-08-13,Taste of India,Ice Cream,Dessert,80,5,400,Cash,0.86
+251,2023-11-01,Spice Garden,Idli Sambar,Breakfast,90,6,540,Card,1.77
+252,2023-01-15,Taste of India,Dal Tadka,Main Course,150,7,1050,Online,1.47
+253,2023-12-21,Taste of India,Pav Bhaji,Snacks,100,1,100,Online,0.2
+254,2023-08-31,Spice Garden,Lassi,Beverages,70,5,350,Online,2.03
+255,2023-12-01,Taste of India,Veg Biryani,Main Course,180,2,360,Online,1.16
+256,2023-11-04,Spice Garden,Dal Tadka,Main Course,150,1,150,Cash,0.31
+257,2023-01-03,Spice Garden,Chicken Biryani,Main Course,220,8,1760,Cash,1.1
+258,2023-04-19,Spice Garden,Gulab Jamun,Dessert,60,7,420,Cash,0.92
+259,2023-05-25,Mumbai Tadka,Veg Biryani,Main Course,180,3,540,Online,0.26
+260,2023-05-11,Taste of India,Veg Biryani,Main Course,180,5,900,Card,0.96
+261,2023-02-24,Spice Garden,Dal Tadka,Main Course,150,9,1350,Card,0.77
+262,2023-07-18,Taste of India,Pav Bhaji,Snacks,100,6,600,Card,1.0
+263,2023-04-13,Spice Garden,Lassi,Beverages,70,4,280,UPI,0.47
+264,2023-02-04,Green Bowl,Chai,Beverages,30,9,270,Cash,0.91
+265,2023-06-26,Mumbai Tadka,Chai,Beverages,30,8,240,UPI,0.48
+266,2023-08-20,Green Bowl,Gulab Jamun,Dessert,60,8,480,UPI,1.22
+267,2023-09-09,Hotel Sai,Paneer Butter Masala,Main Course,200,7,1400,UPI,0.98
+268,2023-12-14,Taste of India,Dal Tadka,Main Course,150,1,150,UPI,1.36
+269,2023-12-16,Taste of India,Gulab Jamun,Dessert,60,6,360,UPI,0.86
+270,2023-10-14,Hotel Sai,Chai,Beverages,30,5,150,Card,2.17
+271,2023-07-25,Green Bowl,Gulab Jamun,Dessert,60,7,420,Online,0.77
+272,2023-05-24,Mumbai Tadka,Dal Tadka,Main Course,150,6,900,Cash,0.93
+273,2023-11-19,Green Bowl,Veg Biryani,Main Course,180,10,1800,Online,1.67
+274,2023-11-24,Spice Garden,Idli Sambar,Breakfast,90,3,270,Online,2.49
+275,2023-06-07,Mumbai Tadka,Dal Tadka,Main Course,150,8,1200,Online,1.03
+276,2023-05-30,Spice Garden,Masala Dosa,Breakfast,120,8,960,UPI,0.5
+277,2023-06-09,Mumbai Tadka,Paneer Butter Masala,Main Course,200,1,200,Online,2.09
+278,2023-07-29,Mumbai Tadka,Dal Tadka,Main Course,150,1,150,Card,0.11
+279,2023-05-08,Taste of India,Pav Bhaji,Snacks,100,9,900,Card,1.71
+280,2023-12-08,Hotel Sai,Pav Bhaji,Snacks,100,1,100,Cash,0.14
+281,2023-05-27,Hotel Sai,Ice Cream,Dessert,80,1,80,UPI,1.84
+282,2023-11-30,Mumbai Tadka,Idli Sambar,Breakfast,90,2,180,Card,2.0
+283,2023-08-11,Spice Garden,Dal Tadka,Main Course,150,9,1350,Card,0.1
+284,2023-11-09,Taste of India,Paneer Butter Masala,Main Course,200,3,600,Online,1.86
+285,2023-05-03,Taste of India,Chai,Beverages,30,9,270,Cash,2.38
+286,2023-03-02,Spice Garden,Gulab Jamun,Dessert,60,5,300,Online,0.54
+287,2023-04-14,Taste of India,Paneer Butter Masala,Main Course,200,3,600,Cash,1.31
+288,2023-04-15,Green Bowl,Lassi,Beverages,70,1,70,Card,0.33
+289,2023-11-13,Taste of India,Chai,Beverages,30,7,210,UPI,0.64
+290,2023-10-28,Taste of India,Pav Bhaji,Snacks,100,10,1000,Online,0.72
+291,2023-10-30,Hotel Sai,Masala Dosa,Breakfast,120,1,120,Card,1.21
+292,2023-02-13,Mumbai Tadka,Gulab Jamun,Dessert,60,3,180,Card,1.44
+293,2023-11-10,Green Bowl,Ice Cream,Dessert,80,5,400,Online,0.34
+294,2023-09-05,Mumbai Tadka,Lassi,Beverages,70,4,280,Cash,1.49
+295,2023-03-25,Taste of India,Pav Bhaji,Snacks,100,10,1000,Cash,0.3
+296,2023-01-03,Taste of India,Ice Cream,Dessert,80,1,80,UPI,0.85
+297,2023-04-10,Hotel Sai,Gulab Jamun,Dessert,60,4,240,Card,2.23
+298,2023-05-02,Hotel Sai,Pav Bhaji,Snacks,100,9,900,Cash,2.24
+299,2023-09-10,Mumbai Tadka,Pav Bhaji,Snacks,100,2,200,UPI,1.27
+300,2023-03-06,Hotel Sai,Lassi,Beverages,70,8,560,Card,2.2
+301,2023-01-30,Mumbai Tadka,Gulab Jamun,Dessert,60,8,480,Card,1.56
+302,2023-01-05,Taste of India,Paneer Butter Masala,Main Course,200,2,400,Online,2.44
+303,2023-11-28,Hotel Sai,Chicken Biryani,Main Course,220,4,880,Online,1.09
+304,2023-09-27,Green Bowl,Idli Sambar,Breakfast,90,4,360,UPI,1.8
+305,2023-09-14,Spice Garden,Masala Dosa,Breakfast,120,4,480,Cash,0.8
+306,2023-06-27,Taste of India,Chai,Beverages,30,6,180,Online,2.38
+307,2023-11-24,Spice Garden,Paneer Butter Masala,Main Course,200,3,600,Cash,1.26
+308,2023-10-29,Mumbai Tadka,Chicken Biryani,Main Course,220,5,1100,UPI,1.05
+309,2023-08-07,Green Bowl,Lassi,Beverages,70,2,140,Card,0.87
+310,2023-01-26,Mumbai Tadka,Veg Biryani,Main Course,180,5,900,Card,2.43
+311,2023-11-09,Mumbai Tadka,Vada Pav,Snacks,40,4,160,UPI,2.22
+312,2023-01-09,Green Bowl,Veg Biryani,Main Course,180,7,1260,Card,1.33
+313,2023-03-30,Hotel Sai,Gulab Jamun,Dessert,60,3,180,Card,0.65
+314,2023-10-01,Spice Garden,Chicken Biryani,Main Course,220,1,220,Card,2.32
+315,2023-09-24,Hotel Sai,Paneer Butter Masala,Main Course,200,6,1200,UPI,1.05
+316,2023-06-29,Hotel Sai,Ice Cream,Dessert,80,1,80,Online,0.94
+317,2023-07-10,Green Bowl,Gulab Jamun,Dessert,60,3,180,UPI,0.83
+318,2023-05-24,Hotel Sai,Dal Tadka,Main Course,150,3,450,Online,0.99
+319,2023-05-01,Green Bowl,Pav Bhaji,Snacks,100,8,800,UPI,1.62
+320,2023-02-15,Taste of India,Gulab Jamun,Dessert,60,3,180,UPI,0.46
+321,2023-03-04,Mumbai Tadka,Dal Tadka,Main Course,150,9,1350,Card,2.05
+322,2023-12-29,Green Bowl,Gulab Jamun,Dessert,60,7,420,Cash,0.88
+323,2023-11-17,Taste of India,Masala Dosa,Breakfast,120,9,1080,Online,0.86
+324,2023-08-04,Spice Garden,Pav Bhaji,Snacks,100,2,200,UPI,1.79
+325,2023-08-27,Mumbai Tadka,Veg Biryani,Main Course,180,8,1440,Cash,2.47
+326,2023-07-20,Mumbai Tadka,Veg Biryani,Main Course,180,4,720,Online,0.51
+327,2023-10-02,Hotel Sai,Chai,Beverages,30,4,120,Cash,1.24
+328,2023-11-03,Spice Garden,Veg Biryani,Main Course,180,10,1800,UPI,2.04
+329,2023-12-21,Mumbai Tadka,Masala Dosa,Breakfast,120,8,960,UPI,0.92
+330,2023-02-28,Mumbai Tadka,Vada Pav,Snacks,40,10,400,UPI,2.28
+331,2023-06-29,Taste of India,Ice Cream,Dessert,80,7,560,Cash,0.85
+332,2023-10-12,Spice Garden,Paneer Butter Masala,Main Course,200,3,600,Online,1.62
+333,2023-10-11,Hotel Sai,Paneer Butter Masala,Main Course,200,8,1600,UPI,1.73
+334,2023-10-31,Taste of India,Lassi,Beverages,70,8,560,Cash,1.34
+335,2023-08-12,Green Bowl,Gulab Jamun,Dessert,60,9,540,UPI,0.33
+336,2023-02-18,Green Bowl,Pav Bhaji,Snacks,100,7,700,Card,1.17
+337,2023-06-27,Hotel Sai,Idli Sambar,Breakfast,90,4,360,Cash,2.0
+338,2023-06-12,Green Bowl,Masala Dosa,Breakfast,120,3,360,UPI,0.67
+339,2023-05-17,Green Bowl,Dal Tadka,Main Course,150,3,450,Online,1.17
+340,2023-12-11,Taste of India,Chai,Beverages,30,3,90,Cash,1.12
+341,2023-10-05,Hotel Sai,Veg Biryani,Main Course,180,3,540,Online,1.69
+342,2023-10-10,Taste of India,Pav Bhaji,Snacks,100,9,900,Card,1.81
+343,2023-07-25,Taste of India,Veg Biryani,Main Course,180,2,360,Card,0.55
+344,2023-10-26,Hotel Sai,Gulab Jamun,Dessert,60,2,120,UPI,0.6
+345,2023-10-11,Mumbai Tadka,Chicken Biryani,Main Course,220,9,1980,Online,2.07
+346,2023-05-19,Taste of India,Gulab Jamun,Dessert,60,2,120,Card,2.39
+347,2023-10-31,Spice Garden,Gulab Jamun,Dessert,60,2,120,UPI,1.15
+348,2023-02-28,Hotel Sai,Dal Tadka,Main Course,150,4,600,Card,2.07
+349,2023-07-17,Taste of India,Veg Biryani,Main Course,180,3,540,Card,0.11
+350,2023-09-29,Mumbai Tadka,Paneer Butter Masala,Main Course,200,7,1400,UPI,0.5
+351,2023-04-16,Spice Garden,Ice Cream,Dessert,80,4,320,UPI,0.98
+352,2023-03-26,Mumbai Tadka,Chai,Beverages,30,5,150,UPI,0.33
+353,2023-08-12,Mumbai Tadka,Idli Sambar,Breakfast,90,4,360,Online,2.4
+354,2023-01-16,Hotel Sai,Idli Sambar,Breakfast,90,1,90,UPI,0.72
+355,2023-05-28,Spice Garden,Veg Biryani,Main Course,180,6,1080,Card,0.88
+356,2023-06-20,Spice Garden,Gulab Jamun,Dessert,60,10,600,UPI,0.57
+357,2023-10-04,Green Bowl,Chai,Beverages,30,6,180,Cash,2.32
+358,2023-12-06,Spice Garden,Idli Sambar,Breakfast,90,5,450,Card,0.45
+359,2023-06-20,Green Bowl,Gulab Jamun,Dessert,60,9,540,Cash,1.7
+360,2023-06-18,Mumbai Tadka,Lassi,Beverages,70,3,210,Online,0.66
+361,2023-10-03,Spice Garden,Pav Bhaji,Snacks,100,10,1000,UPI,0.81
+362,2023-03-22,Green Bowl,Gulab Jamun,Dessert,60,7,420,Card,1.24
+363,2023-06-10,Mumbai Tadka,Pav Bhaji,Snacks,100,10,1000,Card,1.12
+364,2023-07-24,Spice Garden,Gulab Jamun,Dessert,60,5,300,Cash,0.33
+365,2023-04-24,Mumbai Tadka,Vada Pav,Snacks,40,6,240,Card,2.3
+366,2023-07-20,Taste of India,Gulab Jamun,Dessert,60,2,120,Card,2.32
+367,2023-01-12,Taste of India,Idli Sambar,Breakfast,90,1,90,Online,0.34
+368,2023-03-30,Mumbai Tadka,Ice Cream,Dessert,80,2,160,Online,0.24
+369,2023-01-09,Green Bowl,Ice Cream,Dessert,80,9,720,Online,1.18
+370,2023-09-06,Green Bowl,Vada Pav,Snacks,40,2,80,UPI,1.09
+371,2023-03-22,Spice Garden,Vada Pav,Snacks,40,10,400,UPI,1.16
+372,2023-05-01,Green Bowl,Chai,Beverages,30,5,150,UPI,0.37
+373,2023-01-06,Mumbai Tadka,Masala Dosa,Breakfast,120,7,840,UPI,2.48
+374,2023-07-14,Hotel Sai,Chai,Beverages,30,5,150,Cash,0.93
+375,2023-04-01,Mumbai Tadka,Dal Tadka,Main Course,150,7,1050,Cash,1.63
+376,2023-07-28,Hotel Sai,Lassi,Beverages,70,10,700,UPI,1.55
+377,2023-11-28,Hotel Sai,Dal Tadka,Main Course,150,1,150,UPI,1.42
+378,2023-07-12,Taste of India,Dal Tadka,Main Course,150,10,1500,Card,2.49
+379,2023-01-09,Mumbai Tadka,Lassi,Beverages,70,3,210,Card,0.48
+380,2023-03-04,Hotel Sai,Dal Tadka,Main Course,150,2,300,Cash,2.39
+381,2023-12-31,Taste of India,Veg Biryani,Main Course,180,8,1440,Card,0.21
+382,2023-10-30,Green Bowl,Chicken Biryani,Main Course,220,2,440,Card,0.82
+383,2023-05-24,Green Bowl,Pav Bhaji,Snacks,100,10,1000,Online,2.36
+384,2023-04-28,Green Bowl,Vada Pav,Snacks,40,3,120,Card,2.49
+385,2023-05-04,Spice Garden,Dal Tadka,Main Course,150,1,150,Online,2.36
+386,2023-07-03,Hotel Sai,Pav Bhaji,Snacks,100,3,300,Cash,0.79
+387,2023-09-19,Mumbai Tadka,Chicken Biryani,Main Course,220,6,1320,Cash,1.14
+388,2023-09-16,Hotel Sai,Lassi,Beverages,70,1,70,Cash,2.36
+389,2023-12-30,Spice Garden,Dal Tadka,Main Course,150,4,600,Cash,0.62
+390,2023-07-31,Hotel Sai,Chai,Beverages,30,9,270,Cash,1.25
+391,2023-12-19,Hotel Sai,Lassi,Beverages,70,4,280,Cash,1.71
+392,2023-04-03,Mumbai Tadka,Dal Tadka,Main Course,150,4,600,Cash,2.39
+393,2023-03-19,Green Bowl,Masala Dosa,Breakfast,120,4,480,Card,1.07
+394,2023-07-30,Taste of India,Idli Sambar,Breakfast,90,2,180,Online,0.48
+395,2023-03-22,Taste of India,Lassi,Beverages,70,8,560,Cash,1.04
+396,2023-02-03,Taste of India,Ice Cream,Dessert,80,5,400,Cash,2.04
+397,2023-01-17,Taste of India,Gulab Jamun,Dessert,60,9,540,UPI,0.32
+398,2023-07-22,Taste of India,Vada Pav,Snacks,40,5,200,Cash,2.44
+399,2023-08-22,Green Bowl,Lassi,Beverages,70,1,70,Online,1.65
+400,2023-02-26,Mumbai Tadka,Chicken Biryani,Main Course,220,3,660,UPI,2.45
+401,2023-02-02,Spice Garden,Idli Sambar,Breakfast,90,9,810,Online,1.68
+402,2023-09-24,Hotel Sai,Veg Biryani,Main Course,180,9,1620,Cash,2.49
+403,2023-09-22,Green Bowl,Dal Tadka,Main Course,150,4,600,Card,0.56
+404,2023-07-05,Hotel Sai,Chai,Beverages,30,4,120,UPI,1.68
+405,2023-08-01,Spice Garden,Dal Tadka,Main Course,150,8,1200,Online,1.68
+406,2023-05-21,Taste of India,Masala Dosa,Breakfast,120,4,480,UPI,0.26
+407,2023-04-25,Spice Garden,Dal Tadka,Main Course,150,10,1500,Online,2.1
+408,2023-09-13,Green Bowl,Pav Bhaji,Snacks,100,7,700,Online,2.07
+409,2023-06-03,Green Bowl,Paneer Butter Masala,Main Course,200,4,800,UPI,2.01
+410,2023-03-10,Hotel Sai,Masala Dosa,Breakfast,120,6,720,UPI,2.46
+411,2023-08-02,Green Bowl,Paneer Butter Masala,Main Course,200,3,600,Card,2.18
+412,2023-07-18,Taste of India,Masala Dosa,Breakfast,120,9,1080,Cash,1.47
+413,2023-08-13,Green Bowl,Pav Bhaji,Snacks,100,4,400,Online,1.92
+414,2023-08-11,Green Bowl,Veg Biryani,Main Course,180,6,1080,UPI,1.21
+415,2023-06-16,Taste of India,Lassi,Beverages,70,9,630,Cash,2.48
+416,2023-04-07,Taste of India,Pav Bhaji,Snacks,100,9,900,Online,1.98
+417,2023-03-09,Green Bowl,Pav Bhaji,Snacks,100,7,700,Online,0.11
+418,2023-03-26,Green Bowl,Lassi,Beverages,70,10,700,Online,1.86
+419,2023-08-01,Spice Garden,Dal Tadka,Main Course,150,5,750,UPI,1.43
+420,2023-07-04,Taste of India,Lassi,Beverages,70,7,490,Cash,0.86
+421,2023-08-17,Taste of India,Chicken Biryani,Main Course,220,2,440,Cash,0.73
+422,2023-05-28,Green Bowl,Gulab Jamun,Dessert,60,5,300,Online,2.02
+423,2023-11-22,Green Bowl,Dal Tadka,Main Course,150,8,1200,Card,0.16
+424,2023-03-05,Hotel Sai,Gulab Jamun,Dessert,60,8,480,UPI,1.44
+425,2023-09-05,Mumbai Tadka,Lassi,Beverages,70,2,140,Card,2.27
+426,2023-09-27,Mumbai Tadka,Idli Sambar,Breakfast,90,2,180,Online,1.45
+427,2023-02-04,Green Bowl,Paneer Butter Masala,Main Course,200,2,400,Card,1.78
+428,2023-09-04,Mumbai Tadka,Vada Pav,Snacks,40,1,40,UPI,1.07
+429,2023-07-23,Taste of India,Vada Pav,Snacks,40,6,240,Cash,1.41
+430,2023-05-13,Green Bowl,Paneer Butter Masala,Main Course,200,7,1400,Card,1.95
+431,2023-08-24,Spice Garden,Veg Biryani,Main Course,180,1,180,UPI,0.14
+432,2023-03-05,Spice Garden,Idli Sambar,Breakfast,90,7,630,Card,1.36
+433,2023-01-13,Spice Garden,Masala Dosa,Breakfast,120,6,720,Card,0.73
+434,2023-04-18,Green Bowl,Gulab Jamun,Dessert,60,10,600,Card,0.72
+435,2023-10-08,Hotel Sai,Chai,Beverages,30,3,90,Online,1.31
+436,2023-12-05,Mumbai Tadka,Dal Tadka,Main Course,150,9,1350,Cash,0.29
+437,2023-03-19,Spice Garden,Veg Biryani,Main Course,180,8,1440,Card,1.58
+438,2023-05-26,Hotel Sai,Paneer Butter Masala,Main Course,200,2,400,Card,1.44
+439,2023-01-05,Taste of India,Veg Biryani,Main Course,180,8,1440,Card,0.82
+440,2023-04-24,Spice Garden,Lassi,Beverages,70,1,70,Online,0.29
+441,2023-10-11,Spice Garden,Veg Biryani,Main Course,180,9,1620,Online,0.99
+442,2023-07-14,Taste of India,Veg Biryani,Main Course,180,4,720,Card,1.48
+443,2023-07-10,Spice Garden,Ice Cream,Dessert,80,6,480,Card,1.93
+444,2023-11-28,Green Bowl,Pav Bhaji,Snacks,100,1,100,UPI,0.39
+445,2023-01-09,Taste of India,Veg Biryani,Main Course,180,10,1800,Card,0.86
+446,2023-03-01,Hotel Sai,Gulab Jamun,Dessert,60,9,540,Online,1.13
+447,2023-02-19,Taste of India,Chicken Biryani,Main Course,220,6,1320,Cash,1.01
+448,2023-12-12,Taste of India,Chai,Beverages,30,1,30,Cash,1.8
+449,2023-11-09,Green Bowl,Gulab Jamun,Dessert,60,4,240,UPI,0.67
+450,2023-03-21,Spice Garden,Paneer Butter Masala,Main Course,200,2,400,UPI,0.87
+451,2023-05-19,Taste of India,Ice Cream,Dessert,80,2,160,UPI,1.2
+452,2023-03-19,Mumbai Tadka,Dal Tadka,Main Course,150,5,750,Card,0.64
+453,2023-01-24,Spice Garden,Gulab Jamun,Dessert,60,3,180,Online,0.81
+454,2023-02-04,Hotel Sai,Ice Cream,Dessert,80,10,800,UPI,1.44
+455,2023-06-05,Taste of India,Vada Pav,Snacks,40,5,200,Online,1.67
+456,2023-12-06,Mumbai Tadka,Veg Biryani,Main Course,180,3,540,Online,0.64
+457,2023-04-22,Mumbai Tadka,Paneer Butter Masala,Main Course,200,7,1400,Cash,0.48
+458,2023-08-12,Taste of India,Chai,Beverages,30,8,240,Card,1.21
+459,2023-04-24,Hotel Sai,Idli Sambar,Breakfast,90,3,270,UPI,1.79
+460,2023-05-27,Mumbai Tadka,Lassi,Beverages,70,1,70,Cash,0.33
+461,2023-10-27,Hotel Sai,Gulab Jamun,Dessert,60,1,60,Online,1.58
+462,2023-06-13,Taste of India,Lassi,Beverages,70,6,420,Online,2.07
+463,2023-11-04,Green Bowl,Dal Tadka,Main Course,150,2,300,Cash,0.39
+464,2023-02-21,Spice Garden,Idli Sambar,Breakfast,90,6,540,Card,0.15
+465,2023-12-13,Taste of India,Dal Tadka,Main Course,150,8,1200,Online,2.49
+466,2023-03-11,Green Bowl,Lassi,Beverages,70,9,630,Online,1.95
+467,2023-04-03,Taste of India,Lassi,Beverages,70,6,420,Online,1.57
+468,2023-08-09,Spice Garden,Gulab Jamun,Dessert,60,9,540,Online,1.61
+469,2023-09-14,Mumbai Tadka,Masala Dosa,Breakfast,120,2,240,Cash,2.21
+470,2023-02-09,Taste of India,Lassi,Beverages,70,2,140,Cash,0.65
+471,2023-01-07,Spice Garden,Chicken Biryani,Main Course,220,7,1540,Online,1.1
+472,2023-04-27,Green Bowl,Paneer Butter Masala,Main Course,200,10,2000,Card,1.55
+473,2023-05-07,Spice Garden,Paneer Butter Masala,Main Course,200,6,1200,Cash,2.34
+474,2023-09-08,Mumbai Tadka,Ice Cream,Dessert,80,10,800,UPI,1.86
+475,2023-04-20,Green Bowl,Ice Cream,Dessert,80,1,80,Online,0.77
+476,2023-12-15,Green Bowl,Lassi,Beverages,70,8,560,Cash,0.75
+477,2023-11-08,Spice Garden,Lassi,Beverages,70,9,630,Cash,1.04
+478,2023-02-19,Mumbai Tadka,Chai,Beverages,30,1,30,Card,1.47
+479,2023-03-01,Spice Garden,Chai,Beverages,30,6,180,Card,0.61
+480,2023-10-03,Hotel Sai,Idli Sambar,Breakfast,90,2,180,Online,0.4
+481,2023-02-21,Green Bowl,Masala Dosa,Breakfast,120,6,720,Online,1.96
+482,2023-11-22,Taste of India,Masala Dosa,Breakfast,120,1,120,Card,0.87
+483,2023-01-18,Spice Garden,Vada Pav,Snacks,40,2,80,Cash,1.21
+484,2023-05-04,Mumbai Tadka,Chai,Beverages,30,5,150,UPI,0.37
+485,2023-10-03,Mumbai Tadka,Ice Cream,Dessert,80,1,80,Online,1.64
+486,2023-10-25,Spice Garden,Vada Pav,Snacks,40,6,240,UPI,0.95
+487,2023-06-22,Hotel Sai,Chicken Biryani,Main Course,220,2,440,Cash,1.49
+488,2023-10-27,Mumbai Tadka,Veg Biryani,Main Course,180,3,540,Cash,0.47
+489,2023-01-23,Hotel Sai,Chicken Biryani,Main Course,220,8,1760,Cash,2.2
+490,2023-07-15,Spice Garden,Vada Pav,Snacks,40,5,200,Cash,0.43
+491,2023-10-21,Hotel Sai,Lassi,Beverages,70,10,700,UPI,0.35
+492,2023-08-14,Hotel Sai,Masala Dosa,Breakfast,120,6,720,Online,0.42
+493,2023-07-17,Hotel Sai,Gulab Jamun,Dessert,60,8,480,Online,0.23
+494,2023-07-07,Mumbai Tadka,Paneer Butter Masala,Main Course,200,9,1800,Online,1.33
+495,2023-04-20,Green Bowl,Lassi,Beverages,70,2,140,Online,2.22
+496,2023-04-28,Spice Garden,Gulab Jamun,Dessert,60,5,300,UPI,2.09
+497,2023-06-16,Hotel Sai,Veg Biryani,Main Course,180,8,1440,Cash,1.86
+498,2023-11-25,Hotel Sai,Masala Dosa,Breakfast,120,7,840,UPI,0.89
+499,2023-11-25,Green Bowl,Veg Biryani,Main Course,180,5,900,Card,0.66
+500,2023-10-13,Mumbai Tadka,Ice Cream,Dessert,80,1,80,Cash,2.36

@@ -1,0 +1,11 @@
+Donor ID,Donor Name,Food Type,Food Item,Quantity (kg),Location,Contact,Perishable,Available From,Available Until
+1,Hotel Sai,Perishable,Cooked Rice,20,Pune,9876541230,Yes,2024-01-01 18:00,2024-01-01 21:00
+2,Spice Garden,Perishable,Dal & Sabzi,15,Mumbai,9812341230,Yes,2024-01-02 19:00,2024-01-02 22:00
+3,D-Mart Pune,Non-Perishable,Biscuits & Chips,50,Pune,9823451230,No,2024-01-03 10:00,2024-01-05 18:00
+4,Green Bowl Cafe,Semi-Perishable,Bread & Buns,10,Nagpur,9834561230,Yes,2024-01-04 08:00,2024-01-04 14:00
+5,Hotel Presidency,Perishable,Cooked Vegetables,25,Nashik,9845671230,Yes,2024-01-05 20:00,2024-01-05 23:00
+6,Big Bazaar,Non-Perishable,Rice & Lentils,100,Mumbai,9856781230,No,2024-01-06 09:00,2024-01-08 18:00
+7,Cafe Coffee Day,Semi-Perishable,Sandwiches & Snacks,8,Thane,9867891230,Yes,2024-01-07 17:00,2024-01-07 20:00
+8,Mumbai Tadka,Perishable,Chicken Curry,18,Mumbai,9878901230,Yes,2024-01-08 21:00,2024-01-08 23:30
+9,Reliance Fresh,Non-Perishable,Canned Goods,60,Solapur,9889011230,No,2024-01-09 10:00,2024-01-11 18:00
+10,Anna Bhoj Hotel,Perishable,Mixed Food,30,Pimpri-Chinchwad,9890121230,Yes,2024-01-10 19:00,2024-01-10 22:00

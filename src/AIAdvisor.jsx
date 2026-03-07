@@ -156,7 +156,7 @@ export default function AIAdvisor({ initialQueryText, clearInitialQuery }) {
       role: "assistant",
       text: `👋 Hello! I'm your **FoodWaste.AI Advisor**.
 
-I'm running locally on Ollama (llama3) — no cloud, 100% private.
+I can run locally on Ollama (llama3.2:1b) or via Cloud (OpenRouter).
 
 I can help you with:
 • 🚨 Urgent surplus redistribution decisions
@@ -170,6 +170,7 @@ What do you need help with right now?`
 
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [provider, setProvider] = useState("ollama"); // "ollama" | "openrouter"
   const [ollamaStatus, setOllamaStatus] = useState("checking"); // "online" | "offline" | "checking"
   const [conversationHistory, setConversationHistory] = useState([]);
   const bottomRef = useRef(null);
@@ -188,13 +189,7 @@ What do you need help with right now?`
     checkOllama();
   }, []);
 
-  // Handle incoming initial queries from other components
-  useEffect(() => {
-    if (initialQueryText) {
-      sendMessage(initialQueryText);
-      if (clearInitialQuery) clearInitialQuery();
-    }
-  }, [initialQueryText]);
+
 
   // ── Auto scroll to bottom ──
   useEffect(() => {
@@ -216,7 +211,59 @@ What do you need help with right now?`
       { role: "user", content: text }
     ];
 
-    if (ollamaStatus === "offline") {
+    if (provider === "openrouter") {
+      try {
+        const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
+        if (!apiKey) {
+          throw new Error("VITE_OPENROUTER_API_KEY is not set in your .env file.");
+        }
+
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+            model: "meta-llama/llama-3.3-70b-instruct:free",
+            messages: [
+              { role: "system", content: SYSTEM_PROMPT },
+              ...FEW_SHOT_EXAMPLES,
+              ...updatedHistory,
+            ],
+            temperature: 0.7,
+            top_p: 0.9,
+          })
+        });
+
+        const data = await response.json();
+        let assistantText = "Sorry, I couldn't process that. Please try again.";
+
+        if (data.error) {
+          assistantText = `⚠️ OpenRouter Error: ${data.error.message || JSON.stringify(data.error)}`;
+        } else if (data.choices?.[0]?.message?.content) {
+          assistantText = data.choices[0].message.content;
+        }
+
+        setMessages(prev => [...prev, { role: "assistant", text: assistantText }]);
+        setConversationHistory([
+          ...updatedHistory,
+          { role: "assistant", content: assistantText }
+        ]);
+        setLoading(false);
+        return;
+      } catch (err) {
+        console.error(err);
+        setMessages(prev => [...prev, {
+          role: "assistant",
+          text: `⚠️ Cloud Error: ${err.message}\n\nPlease check your .env file and OpenRouter API key.`
+        }]);
+        setLoading(false);
+        return;
+      }
+    }
+
+    if (ollamaStatus === "offline" && provider === "ollama") {
       // Fallback to smart mock if Ollama is offline
       await new Promise(r => setTimeout(r, 1000));
       const fallback = getFallbackResponse(text);
@@ -234,7 +281,7 @@ What do you need help with right now?`
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "llama3",
+          model: "llama3.2:1b",
           messages: [
             // Layer 1: System prompt (domain knowledge)
             { role: "system", content: SYSTEM_PROMPT },
@@ -253,7 +300,13 @@ What do you need help with right now?`
       });
 
       const data = await response.json();
-      const assistantText = data.message?.content || "Sorry, I couldn't process that. Please try again.";
+      let assistantText = "Sorry, I couldn't process that. Please try again.";
+
+      if (data.error) {
+        assistantText = `⚠️ Ollama Error: ${data.error}`;
+      } else if (data.message?.content) {
+        assistantText = data.message.content;
+      }
 
       setMessages(prev => [...prev, { role: "assistant", text: assistantText }]);
       setConversationHistory([
@@ -262,6 +315,7 @@ What do you need help with right now?`
       ]);
 
     } catch (err) {
+      console.error(err);
       setOllamaStatus("offline");
       setMessages(prev => [...prev, {
         role: "assistant",
@@ -293,6 +347,14 @@ What do you need help with right now?`
     return `🟡 ANALYZING YOUR REQUEST\n\n📦 General Recommendation:\n• Check urgency score: quantity ÷ hours remaining\n• Score > 7 → dispatch immediately\n• Score 4–7 → schedule within 4 hours\n• Score < 4 → plan for today\n\n📊 Platform Status:\n• 38 food banks available right now\n• Average match score: 87%\n• Community Kitchen has highest capacity (300kg)\n\n💡 Pro Tip: Always contact the food bank 30 minutes before dispatch to confirm capacity.\n\n⚡ Note: Running in offline mode — start Ollama for live AI responses.`;
   };
 
+  // Handle incoming initial queries from other components
+  useEffect(() => {
+    if (initialQueryText) {
+      sendMessage(initialQueryText);
+      if (clearInitialQuery) clearInitialQuery();
+    }
+  }, [initialQueryText, clearInitialQuery]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // ── RENDER ────────────────────────────────────────────────────────────────
   return (
     <div className="space-y-4 flex flex-col h-full relative z-10">
@@ -301,35 +363,55 @@ What do you need help with right now?`
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold font-sans text-[#f5efe6] tracking-tight">AI Advisor</h1>
-          <p className="text-[#c4a882]/60 text-sm mt-1">
-            Powered by Ollama · llama3 · Running locally
+          <p className="text-[#c4a882]/60 text-sm mt-1 flex items-center gap-2">
+            Powered by {provider === "openrouter" ? "OpenRouter (Cloud)" : "Ollama (Local)"}
           </p>
         </div>
 
-        {/* Ollama Status Badge */}
-        <div className={`flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-semibold backdrop-blur-md ${ollamaStatus === "online"
-            ? "bg-[#c4a882]/10 border-[#c4a882]/30 text-[#c4a882]"
-            : ollamaStatus === "offline"
-              ? "bg-red-500/10 border-red-500/30 text-red-400"
-              : "bg-[#3a3328]/30 border-[#3a3328] text-[#c4a882]/40"
-          }`}>
-          <div className={`w-2 h-2 rounded-full ${ollamaStatus === "online" ? "bg-[#d4b896] animate-pulse" :
-              ollamaStatus === "offline" ? "bg-red-400" : "bg-[#c4a882]/40 animate-pulse"
-            }`} />
-          {ollamaStatus === "online" ? "Ollama Online" :
-            ollamaStatus === "offline" ? "Ollama Offline" :
-              "Checking Ollama..."}
+        <div className="flex flex-col gap-2 items-end">
+          {/* Provider Toggle */}
+          <div className="flex bg-[#141210] rounded-full p-1 border border-[#3a3328]">
+            <button
+              onClick={() => setProvider("ollama")}
+              className={`px-3 py-1 rounded-full text-xs font-medium transition-all ${provider === "ollama" ? "bg-[#c4a882] text-[#1a1814]" : "text-[#c4a882]/60 hover:text-[#c4a882]"}`}
+            >
+              Local (Ollama)
+            </button>
+            <button
+              onClick={() => setProvider("openrouter")}
+              className={`px-3 py-1 rounded-full text-xs font-medium transition-all ${provider === "openrouter" ? "bg-[#c4a882] text-[#1a1814]" : "text-[#c4a882]/60 hover:text-[#c4a882]"}`}
+            >
+              Cloud (OpenRouter)
+            </button>
+          </div>
+
+          {/* Ollama Status Badge - Only show if Ollama is selected */}
+          {provider === "ollama" && (
+            <div className={`flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-semibold backdrop-blur-md ${ollamaStatus === "online"
+              ? "bg-[#c4a882]/10 border-[#c4a882]/30 text-[#c4a882]"
+              : ollamaStatus === "offline"
+                ? "bg-red-500/10 border-red-500/30 text-red-400"
+                : "bg-[#3a3328]/30 border-[#3a3328] text-[#c4a882]/40"
+              }`}>
+              <div className={`w-2 h-2 rounded-full ${ollamaStatus === "online" ? "bg-[#d4b896] animate-pulse" :
+                ollamaStatus === "offline" ? "bg-red-400" : "bg-[#c4a882]/40 animate-pulse"
+                }`} />
+              {ollamaStatus === "online" ? "Ollama Online" :
+                ollamaStatus === "offline" ? "Ollama Offline" :
+                  "Checking Ollama..."}
+            </div>
+          )}
         </div>
       </div>
 
       {/* Offline warning */}
-      {ollamaStatus === "offline" && (
+      {ollamaStatus === "offline" && provider === "ollama" && (
         <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4 shadow-sm">
           <p className="text-red-400 text-sm font-medium mb-1">⚠️ Ollama is not running</p>
           <p className="text-red-400/70 text-xs">
             Open terminal and run: <code className="bg-red-500/20 px-2 py-0.5 rounded font-mono">ollama serve</code>
             &nbsp;then&nbsp;
-            <code className="bg-red-500/20 px-2 py-0.5 rounded font-mono">ollama pull llama3</code>
+            <code className="bg-red-500/20 px-2 py-0.5 rounded font-mono">ollama pull llama3.2:1b</code>
           </p>
           <p className="text-red-400/50 text-xs mt-1">Smart offline responses are active as backup.</p>
         </div>
@@ -352,8 +434,8 @@ What do you need help with right now?`
 
               {/* Message Bubble */}
               <div className={`max-w-[82%] px-4 py-3 rounded-2xl text-sm leading-relaxed whitespace-pre-line shadow-sm ${msg.role === "user"
-                  ? "bg-gradient-to-br from-[#c4a882] to-[#b3956e] text-[#1a1814] font-medium rounded-br-sm"
-                  : "bg-[#141210] border border-[#3a3328] text-[#ede0cc]/95 rounded-bl-sm"
+                ? "bg-gradient-to-br from-[#c4a882] to-[#b3956e] text-[#1a1814] font-medium rounded-br-sm"
+                : "bg-[#141210] border border-[#3a3328] text-[#ede0cc]/95 rounded-bl-sm"
                 }`}>
                 {msg.text}
               </div>
@@ -425,11 +507,16 @@ What do you need help with right now?`
         </div>
 
         {/* Fine-tuning info footer */}
-        <div className="mt-3 flex items-center gap-2 px-1">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#c4a882]/40" />
-          <p className="text-[#c4a882]/40 text-[11px] font-medium tracking-wide">
-            DOMAIN-TUNED · LOCAL INFERENCE · PRIVATE
-          </p>
+        <div className="mt-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 px-1">
+          <div className="flex items-center gap-2">
+            <div className={`w-1.5 h-1.5 rounded-full ${provider === "openrouter" ? "bg-blue-400/40" : "bg-[#c4a882]/40"}`} />
+            <p className="text-[#c4a882]/40 text-[11px] font-medium tracking-wide">
+              {provider === "openrouter" ? "CLOUD INFERENCE · META-LLAMA-3" : "DOMAIN-TUNED · LOCAL INFERENCE · PRIVATE"}
+            </p>
+          </div>
+          {provider === "openrouter" && (
+            <p className="text-[#c4a882]/30 text-[11px]">Powered by OpenRouter.ai API</p>
+          )}
         </div>
       </div>
     </div>

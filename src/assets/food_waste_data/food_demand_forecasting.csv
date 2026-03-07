@@ -1,0 +1,401 @@
+ID,Date,Season,Distribution Center,Food Item,Category,Perishable,Demand (kg),Supplied (kg),Surplus (kg),Waste (kg),Temp (°C)
+1,2023-05-10,Summer,Pune Center,Potatoes,Vegetable,Yes,162,168,6,2.09,25.7
+2,2023-08-15,Monsoon,Thane Base,Wheat Bread,Bakery,Yes,107,102,0,0.0,28.9
+3,2023-03-16,Spring,Pune Center,Bananas,Fruit,Yes,280,236,0,0.0,10.7
+4,2023-10-11,Autumn,Thane Base,Chicken,Protein,Yes,201,190,0,0.0,34.8
+5,2023-04-08,Spring,Nashik Point,Bananas,Fruit,Yes,103,108,5,1.71,29.5
+6,2023-06-10,Summer,Nagpur Unit,Potatoes,Vegetable,Yes,217,204,0,0.0,31.7
+7,2023-06-23,Summer,Pune Center,Onions,Vegetable,No,146,145,0,0.0,28.1
+8,2023-11-10,Autumn,Nashik Point,Bananas,Fruit,Yes,210,198,0,0.0,12.2
+9,2023-12-09,Winter,Thane Base,Chicken,Protein,Yes,184,215,31,11.67,17.8
+10,2023-11-28,Autumn,Nagpur Unit,Onions,Vegetable,No,162,121,0,0.0,17.6
+11,2023-05-22,Summer,Nagpur Unit,Chicken,Protein,Yes,205,236,31,10.04,32.1
+12,2023-11-04,Autumn,Thane Base,Potatoes,Vegetable,Yes,115,87,0,0.0,9.3
+13,2023-02-19,Winter,Nashik Point,Bananas,Fruit,Yes,165,169,4,1.62,22.0
+14,2023-12-08,Winter,Thane Base,Milk,Dairy,Yes,160,136,0,0.0,4.6
+15,2023-01-19,Winter,Nashik Point,Chicken,Protein,Yes,64,48,0,0.0,11.0
+16,2023-11-08,Autumn,Mumbai Hub,Chicken,Protein,Yes,25,28,3,1.6,31.1
+17,2023-08-10,Monsoon,Pune Center,Rice,Grain,No,99,88,0,0.0,25.7
+18,2023-10-05,Autumn,Nashik Point,Rice,Grain,No,128,148,20,0.0,26.6
+19,2023-12-06,Winter,Mumbai Hub,Lentils,Grain,No,198,204,6,0.0,2.8
+20,2023-08-24,Monsoon,Mumbai Hub,Eggs,Protein,Yes,152,109,0,0.0,10.0
+21,2023-02-07,Winter,Nashik Point,Lentils,Grain,No,189,211,22,0.0,23.9
+22,2023-01-31,Winter,Nagpur Unit,Milk,Dairy,Yes,70,50,0,0.0,8.7
+23,2023-01-21,Winter,Thane Base,Bananas,Fruit,Yes,178,149,0,0.0,34.3
+24,2023-03-22,Spring,Nagpur Unit,Lentils,Grain,No,283,203,0,0.0,8.3
+25,2023-09-10,Monsoon,Pune Center,Onions,Vegetable,No,70,77,7,0.0,27.8
+26,2023-06-02,Summer,Nagpur Unit,Tomatoes,Vegetable,Yes,104,92,0,0.0,34.2
+27,2023-04-05,Spring,Nagpur Unit,Onions,Vegetable,No,166,166,0,0.0,32.9
+28,2023-11-03,Autumn,Pune Center,Onions,Vegetable,No,292,218,0,0.0,14.8
+29,2023-07-01,Monsoon,Nashik Point,Rice,Grain,No,171,184,13,0.0,6.3
+30,2023-08-18,Monsoon,Thane Base,Potatoes,Vegetable,Yes,131,116,0,0.0,27.3
+31,2023-02-21,Winter,Mumbai Hub,Onions,Vegetable,No,66,54,0,0.0,31.2
+32,2023-09-27,Monsoon,Nashik Point,Tomatoes,Vegetable,Yes,159,188,29,9.12,21.7
+33,2023-03-21,Spring,Thane Base,Chicken,Protein,Yes,108,90,0,0.0,14.1
+34,2023-01-13,Winter,Nashik Point,Eggs,Protein,Yes,132,131,0,0.0,8.2
+35,2023-09-18,Monsoon,Mumbai Hub,Onions,Vegetable,No,256,300,44,0.0,20.0
+36,2023-08-25,Monsoon,Nashik Point,Onions,Vegetable,No,261,256,0,0.0,13.9
+37,2023-01-27,Winter,Mumbai Hub,Wheat Bread,Bakery,Yes,21,20,0,0.0,13.4
+38,2023-02-10,Winter,Pune Center,Wheat Bread,Bakery,Yes,32,29,0,0.0,16.6
+39,2023-08-19,Monsoon,Thane Base,Chicken,Protein,Yes,208,171,0,0.0,22.3
+40,2023-04-10,Spring,Nagpur Unit,Lentils,Grain,No,293,218,0,0.0,13.4
+41,2023-02-07,Winter,Thane Base,Chicken,Protein,Yes,43,34,0,0.0,33.8
+42,2023-05-14,Summer,Mumbai Hub,Onions,Vegetable,No,151,179,28,0.0,3.6
+43,2023-06-24,Summer,Mumbai Hub,Bananas,Fruit,Yes,198,208,10,2.11,32.2
+44,2023-10-20,Autumn,Thane Base,Rice,Grain,No,52,48,0,0.0,3.4
+45,2023-03-18,Spring,Nashik Point,Tomatoes,Vegetable,Yes,123,123,0,0.0,11.8
+46,2023-02-08,Winter,Thane Base,Rice,Grain,No,231,206,0,0.0,11.9
+47,2023-07-07,Monsoon,Nagpur Unit,Rice,Grain,No,294,231,0,0.0,28.7
+48,2023-05-04,Summer,Mumbai Hub,Bananas,Fruit,Yes,200,171,0,0.0,28.1
+49,2023-08-19,Monsoon,Nashik Point,Wheat Bread,Bakery,Yes,245,218,0,0.0,6.9
+50,2023-05-26,Summer,Thane Base,Potatoes,Vegetable,Yes,287,286,0,0.0,16.2
+51,2023-01-20,Winter,Nashik Point,Lentils,Grain,No,285,265,0,0.0,9.0
+52,2023-07-06,Monsoon,Pune Center,Chicken,Protein,Yes,79,85,6,1.36,15.0
+53,2023-02-17,Winter,Mumbai Hub,Potatoes,Vegetable,Yes,111,86,0,0.0,11.0
+54,2023-07-26,Monsoon,Mumbai Hub,Chicken,Protein,Yes,27,19,0,0.0,10.4
+55,2023-02-24,Winter,Nagpur Unit,Rice,Grain,No,192,202,10,0.0,32.2
+56,2023-10-07,Autumn,Nagpur Unit,Tomatoes,Vegetable,Yes,221,189,0,0.0,5.2
+57,2023-12-12,Winter,Pune Center,Milk,Dairy,Yes,136,161,25,4.97,28.3
+58,2023-05-13,Summer,Nagpur Unit,Onions,Vegetable,No,140,135,0,0.0,23.5
+59,2023-09-27,Monsoon,Nashik Point,Rice,Grain,No,237,259,22,0.0,28.6
+60,2023-04-03,Spring,Nashik Point,Milk,Dairy,Yes,156,124,0,0.0,28.8
+61,2023-06-29,Summer,Thane Base,Rice,Grain,No,216,255,39,0.0,23.9
+62,2023-11-11,Autumn,Nashik Point,Lentils,Grain,No,60,51,0,0.0,30.7
+63,2023-03-10,Spring,Nashik Point,Eggs,Protein,Yes,95,83,0,0.0,11.9
+64,2023-12-31,Winter,Nashik Point,Potatoes,Vegetable,Yes,275,280,5,0.82,14.5
+65,2023-11-15,Autumn,Mumbai Hub,Wheat Bread,Bakery,Yes,131,146,15,5.66,30.0
+66,2023-12-04,Winter,Nashik Point,Bananas,Fruit,Yes,212,204,0,0.0,3.3
+67,2023-01-20,Winter,Nagpur Unit,Bananas,Fruit,Yes,260,202,0,0.0,22.1
+68,2023-09-26,Monsoon,Nashik Point,Rice,Grain,No,207,229,22,0.0,8.1
+69,2023-03-19,Spring,Pune Center,Wheat Bread,Bakery,Yes,150,114,0,0.0,34.0
+70,2023-07-03,Monsoon,Mumbai Hub,Milk,Dairy,Yes,282,204,0,0.0,13.1
+71,2023-09-20,Monsoon,Thane Base,Chicken,Protein,Yes,254,217,0,0.0,34.7
+72,2023-01-26,Winter,Nashik Point,Tomatoes,Vegetable,Yes,188,218,30,8.36,26.8
+73,2023-12-20,Winter,Nagpur Unit,Lentils,Grain,No,229,219,0,0.0,10.0
+74,2023-08-25,Monsoon,Mumbai Hub,Lentils,Grain,No,93,83,0,0.0,12.8
+75,2023-08-14,Monsoon,Pune Center,Tomatoes,Vegetable,Yes,164,167,3,0.64,32.5
+76,2023-08-02,Monsoon,Nagpur Unit,Bananas,Fruit,Yes,258,199,0,0.0,9.5
+77,2023-07-22,Monsoon,Pune Center,Rice,Grain,No,79,57,0,0.0,34.8
+78,2023-04-14,Spring,Mumbai Hub,Milk,Dairy,Yes,278,317,39,8.65,12.0
+79,2023-08-10,Monsoon,Pune Center,Potatoes,Vegetable,Yes,75,54,0,0.0,3.8
+80,2023-12-20,Winter,Pune Center,Milk,Dairy,Yes,252,226,0,0.0,4.8
+81,2023-06-08,Summer,Mumbai Hub,Potatoes,Vegetable,Yes,184,184,0,0.0,19.4
+82,2023-05-04,Summer,Nashik Point,Eggs,Protein,Yes,132,118,0,0.0,24.4
+83,2023-01-28,Winter,Nashik Point,Eggs,Protein,Yes,101,108,7,2.31,27.0
+84,2023-11-14,Autumn,Pune Center,Onions,Vegetable,No,261,196,0,0.0,27.3
+85,2023-04-01,Spring,Pune Center,Wheat Bread,Bakery,Yes,45,45,0,0.0,24.3
+86,2023-09-24,Monsoon,Nagpur Unit,Lentils,Grain,No,87,91,4,0.0,28.6
+87,2023-11-19,Autumn,Nagpur Unit,Tomatoes,Vegetable,Yes,159,151,0,0.0,29.3
+88,2023-04-12,Spring,Mumbai Hub,Potatoes,Vegetable,Yes,95,94,0,0.0,9.2
+89,2023-07-08,Monsoon,Nagpur Unit,Onions,Vegetable,No,291,271,0,0.0,19.6
+90,2023-07-29,Monsoon,Nashik Point,Wheat Bread,Bakery,Yes,267,203,0,0.0,7.1
+91,2023-02-08,Winter,Pune Center,Onions,Vegetable,No,240,217,0,0.0,8.4
+92,2023-10-13,Autumn,Pune Center,Bananas,Fruit,Yes,247,223,0,0.0,18.7
+93,2023-06-12,Summer,Nashik Point,Potatoes,Vegetable,Yes,211,226,15,7.69,15.4
+94,2023-04-21,Spring,Mumbai Hub,Wheat Bread,Bakery,Yes,80,60,0,0.0,25.2
+95,2023-07-12,Monsoon,Nashik Point,Rice,Grain,No,111,125,14,0.0,10.9
+96,2023-10-25,Autumn,Pune Center,Wheat Bread,Bakery,Yes,93,89,0,0.0,7.7
+97,2023-02-19,Winter,Nagpur Unit,Lentils,Grain,No,57,43,0,0.0,16.5
+98,2023-11-15,Autumn,Nagpur Unit,Tomatoes,Vegetable,Yes,38,33,0,0.0,13.2
+99,2023-07-21,Monsoon,Nagpur Unit,Wheat Bread,Bakery,Yes,20,17,0,0.0,24.5
+100,2023-11-23,Autumn,Nashik Point,Rice,Grain,No,38,43,5,0.0,34.3
+101,2023-06-14,Summer,Thane Base,Onions,Vegetable,No,227,246,19,0.0,3.0
+102,2023-11-21,Autumn,Pune Center,Onions,Vegetable,No,198,156,0,0.0,24.0
+103,2023-04-08,Spring,Mumbai Hub,Wheat Bread,Bakery,Yes,111,87,0,0.0,18.6
+104,2023-07-17,Monsoon,Mumbai Hub,Bananas,Fruit,Yes,128,130,2,0.38,15.0
+105,2023-04-03,Spring,Mumbai Hub,Bananas,Fruit,Yes,108,125,17,6.62,18.4
+106,2023-07-30,Monsoon,Thane Base,Milk,Dairy,Yes,216,238,22,5.95,16.5
+107,2023-01-15,Winter,Nashik Point,Onions,Vegetable,No,37,33,0,0.0,14.9
+108,2023-09-25,Monsoon,Mumbai Hub,Potatoes,Vegetable,Yes,186,179,0,0.0,4.5
+109,2023-04-07,Spring,Nagpur Unit,Rice,Grain,No,206,214,8,0.0,21.3
+110,2023-07-16,Monsoon,Nagpur Unit,Bananas,Fruit,Yes,120,84,0,0.0,9.5
+111,2023-02-13,Winter,Mumbai Hub,Chicken,Protein,Yes,134,101,0,0.0,9.9
+112,2023-02-07,Winter,Nagpur Unit,Eggs,Protein,Yes,163,133,0,0.0,6.2
+113,2023-11-05,Autumn,Nashik Point,Potatoes,Vegetable,Yes,234,235,1,0.22,8.8
+114,2023-05-11,Summer,Nagpur Unit,Bananas,Fruit,Yes,66,51,0,0.0,19.1
+115,2023-06-03,Summer,Mumbai Hub,Chicken,Protein,Yes,157,116,0,0.0,10.1
+116,2023-09-01,Monsoon,Thane Base,Bananas,Fruit,Yes,48,45,0,0.0,19.6
+117,2023-09-26,Monsoon,Pune Center,Bananas,Fruit,Yes,144,161,17,7.37,25.8
+118,2023-11-24,Autumn,Thane Base,Milk,Dairy,Yes,146,148,2,0.41,34.1
+119,2023-05-14,Summer,Thane Base,Bananas,Fruit,Yes,289,230,0,0.0,28.6
+120,2023-09-25,Monsoon,Pune Center,Tomatoes,Vegetable,Yes,150,175,25,7.52,3.1
+121,2023-06-20,Summer,Nagpur Unit,Onions,Vegetable,No,225,250,25,0.0,34.5
+122,2023-11-18,Autumn,Mumbai Hub,Milk,Dairy,Yes,195,201,6,3.25,23.9
+123,2023-11-26,Autumn,Nagpur Unit,Chicken,Protein,Yes,157,175,18,10.49,19.2
+124,2023-03-31,Spring,Thane Base,Rice,Grain,No,174,123,0,0.0,14.0
+125,2023-08-22,Monsoon,Nagpur Unit,Potatoes,Vegetable,Yes,210,249,39,11.43,28.2
+126,2023-12-05,Winter,Mumbai Hub,Tomatoes,Vegetable,Yes,231,229,0,0.0,19.7
+127,2023-07-17,Monsoon,Mumbai Hub,Milk,Dairy,Yes,269,218,0,0.0,3.9
+128,2023-07-21,Monsoon,Pune Center,Lentils,Grain,No,90,85,0,0.0,22.3
+129,2023-12-23,Winter,Thane Base,Onions,Vegetable,No,48,37,0,0.0,17.3
+130,2023-07-02,Monsoon,Thane Base,Eggs,Protein,Yes,240,266,26,3.33,26.5
+131,2023-02-14,Winter,Pune Center,Milk,Dairy,Yes,235,277,42,22.76,32.0
+132,2023-06-02,Summer,Thane Base,Onions,Vegetable,No,71,82,11,0.0,15.7
+133,2023-05-24,Summer,Mumbai Hub,Rice,Grain,No,31,31,0,0.0,5.4
+134,2023-10-28,Autumn,Nagpur Unit,Chicken,Protein,Yes,293,235,0,0.0,24.6
+135,2023-06-20,Summer,Pune Center,Onions,Vegetable,No,72,57,0,0.0,26.9
+136,2023-06-22,Summer,Mumbai Hub,Wheat Bread,Bakery,Yes,266,232,0,0.0,2.7
+137,2023-06-25,Summer,Thane Base,Tomatoes,Vegetable,Yes,219,189,0,0.0,3.4
+138,2023-11-06,Autumn,Nashik Point,Wheat Bread,Bakery,Yes,64,66,2,0.76,19.6
+139,2023-08-22,Monsoon,Thane Base,Milk,Dairy,Yes,194,175,0,0.0,29.5
+140,2023-07-17,Monsoon,Thane Base,Tomatoes,Vegetable,Yes,277,214,0,0.0,16.1
+141,2023-03-06,Spring,Mumbai Hub,Milk,Dairy,Yes,154,146,0,0.0,28.0
+142,2023-04-28,Spring,Nagpur Unit,Rice,Grain,No,84,88,4,0.0,32.1
+143,2023-12-11,Winter,Nashik Point,Bananas,Fruit,Yes,216,209,0,0.0,3.3
+144,2023-01-17,Winter,Nagpur Unit,Bananas,Fruit,Yes,217,236,19,5.36,20.3
+145,2023-04-15,Spring,Nagpur Unit,Wheat Bread,Bakery,Yes,209,187,0,0.0,7.7
+146,2023-04-05,Spring,Mumbai Hub,Onions,Vegetable,No,104,103,0,0.0,7.0
+147,2023-11-02,Autumn,Pune Center,Rice,Grain,No,287,310,23,0.0,17.7
+148,2023-01-05,Winter,Nagpur Unit,Bananas,Fruit,Yes,101,71,0,0.0,25.7
+149,2023-01-01,Winter,Thane Base,Milk,Dairy,Yes,268,310,42,12.34,15.6
+150,2023-09-17,Monsoon,Thane Base,Wheat Bread,Bakery,Yes,49,37,0,0.0,30.8
+151,2023-08-12,Monsoon,Nagpur Unit,Bananas,Fruit,Yes,29,26,0,0.0,21.3
+152,2023-10-30,Autumn,Pune Center,Eggs,Protein,Yes,130,128,0,0.0,5.9
+153,2023-03-26,Spring,Pune Center,Milk,Dairy,Yes,63,53,0,0.0,7.8
+154,2023-07-06,Monsoon,Nagpur Unit,Eggs,Protein,Yes,205,241,36,10.36,30.1
+155,2023-05-04,Summer,Thane Base,Wheat Bread,Bakery,Yes,58,63,5,1.53,31.6
+156,2023-11-21,Autumn,Thane Base,Eggs,Protein,Yes,165,172,7,3.21,5.9
+157,2023-02-24,Winter,Nagpur Unit,Onions,Vegetable,No,114,123,9,0.0,2.5
+158,2023-10-05,Autumn,Pune Center,Eggs,Protein,Yes,274,300,26,8.34,24.1
+159,2023-03-14,Spring,Nagpur Unit,Onions,Vegetable,No,103,77,0,0.0,13.1
+160,2023-08-20,Monsoon,Nashik Point,Rice,Grain,No,60,54,0,0.0,34.7
+161,2023-08-25,Monsoon,Pune Center,Chicken,Protein,Yes,293,253,0,0.0,19.4
+162,2023-03-26,Spring,Nagpur Unit,Lentils,Grain,No,214,225,11,0.0,27.6
+163,2023-05-18,Summer,Pune Center,Onions,Vegetable,No,283,262,0,0.0,12.2
+164,2023-07-10,Monsoon,Nagpur Unit,Milk,Dairy,Yes,259,247,0,0.0,25.1
+165,2023-10-22,Autumn,Thane Base,Eggs,Protein,Yes,194,151,0,0.0,31.1
+166,2023-02-02,Winter,Nagpur Unit,Rice,Grain,No,43,35,0,0.0,28.2
+167,2023-10-11,Autumn,Mumbai Hub,Wheat Bread,Bakery,Yes,123,97,0,0.0,17.5
+168,2023-11-04,Autumn,Nagpur Unit,Tomatoes,Vegetable,Yes,92,77,0,0.0,33.7
+169,2023-04-23,Spring,Thane Base,Lentils,Grain,No,145,160,15,0.0,7.1
+170,2023-06-16,Summer,Mumbai Hub,Potatoes,Vegetable,Yes,163,176,13,3.66,12.0
+171,2023-02-28,Winter,Mumbai Hub,Wheat Bread,Bakery,Yes,262,290,28,8.05,16.3
+172,2023-08-09,Monsoon,Mumbai Hub,Tomatoes,Vegetable,Yes,47,51,4,0.87,4.0
+173,2023-12-17,Winter,Mumbai Hub,Onions,Vegetable,No,25,21,0,0.0,20.5
+174,2023-03-30,Spring,Thane Base,Onions,Vegetable,No,206,186,0,0.0,20.8
+175,2023-08-04,Monsoon,Thane Base,Eggs,Protein,Yes,189,140,0,0.0,5.4
+176,2023-08-16,Monsoon,Thane Base,Potatoes,Vegetable,Yes,264,309,45,11.71,14.5
+177,2023-12-06,Winter,Nashik Point,Chicken,Protein,Yes,153,114,0,0.0,25.4
+178,2023-10-29,Autumn,Pune Center,Tomatoes,Vegetable,Yes,227,163,0,0.0,9.7
+179,2023-08-15,Monsoon,Thane Base,Eggs,Protein,Yes,165,121,0,0.0,17.2
+180,2023-03-30,Spring,Thane Base,Onions,Vegetable,No,204,239,35,0.0,22.0
+181,2023-08-26,Monsoon,Thane Base,Tomatoes,Vegetable,Yes,94,76,0,0.0,23.8
+182,2023-04-05,Spring,Mumbai Hub,Milk,Dairy,Yes,298,250,0,0.0,31.6
+183,2023-01-26,Winter,Thane Base,Wheat Bread,Bakery,Yes,146,138,0,0.0,8.2
+184,2023-08-17,Monsoon,Nagpur Unit,Eggs,Protein,Yes,121,85,0,0.0,13.4
+185,2023-10-11,Autumn,Mumbai Hub,Milk,Dairy,Yes,215,210,0,0.0,5.0
+186,2023-12-04,Winter,Nashik Point,Potatoes,Vegetable,Yes,271,222,0,0.0,16.0
+187,2023-08-11,Monsoon,Pune Center,Wheat Bread,Bakery,Yes,236,218,0,0.0,25.4
+188,2023-02-19,Winter,Mumbai Hub,Eggs,Protein,Yes,158,141,0,0.0,27.0
+189,2023-11-29,Autumn,Thane Base,Potatoes,Vegetable,Yes,171,200,29,7.51,8.1
+190,2023-04-16,Spring,Nagpur Unit,Milk,Dairy,Yes,162,134,0,0.0,30.8
+191,2023-01-29,Winter,Mumbai Hub,Milk,Dairy,Yes,114,115,1,0.41,18.2
+192,2023-08-22,Monsoon,Nagpur Unit,Onions,Vegetable,No,170,186,16,0.0,22.8
+193,2023-09-07,Monsoon,Nashik Point,Lentils,Grain,No,162,192,30,0.0,20.5
+194,2023-08-29,Monsoon,Pune Center,Rice,Grain,No,119,88,0,0.0,29.2
+195,2023-12-10,Winter,Nagpur Unit,Milk,Dairy,Yes,223,223,0,0.0,22.6
+196,2023-03-05,Spring,Mumbai Hub,Eggs,Protein,Yes,179,212,33,5.2,33.8
+197,2023-01-27,Winter,Nashik Point,Rice,Grain,No,104,114,10,0.0,33.4
+198,2023-10-22,Autumn,Nagpur Unit,Milk,Dairy,Yes,39,36,0,0.0,22.0
+199,2023-08-16,Monsoon,Nashik Point,Rice,Grain,No,171,146,0,0.0,28.6
+200,2023-06-08,Summer,Mumbai Hub,Tomatoes,Vegetable,Yes,105,73,0,0.0,33.5
+201,2023-12-03,Winter,Thane Base,Rice,Grain,No,98,116,18,0.0,5.6
+202,2023-12-07,Winter,Nagpur Unit,Chicken,Protein,Yes,180,215,35,12.1,33.8
+203,2023-06-12,Summer,Nagpur Unit,Tomatoes,Vegetable,Yes,194,155,0,0.0,7.0
+204,2023-11-14,Autumn,Pune Center,Milk,Dairy,Yes,259,257,0,0.0,2.0
+205,2023-01-23,Winter,Nagpur Unit,Wheat Bread,Bakery,Yes,258,236,0,0.0,15.5
+206,2023-04-27,Spring,Nagpur Unit,Chicken,Protein,Yes,203,193,0,0.0,16.8
+207,2023-03-01,Spring,Mumbai Hub,Lentils,Grain,No,178,173,0,0.0,13.7
+208,2023-10-12,Autumn,Nashik Point,Eggs,Protein,Yes,210,227,17,2.9,5.1
+209,2023-10-04,Autumn,Pune Center,Wheat Bread,Bakery,Yes,106,79,0,0.0,21.0
+210,2023-06-17,Summer,Mumbai Hub,Bananas,Fruit,Yes,241,253,12,6.25,5.0
+211,2023-06-23,Summer,Nashik Point,Milk,Dairy,Yes,274,209,0,0.0,2.1
+212,2023-10-15,Autumn,Mumbai Hub,Rice,Grain,No,266,220,0,0.0,21.3
+213,2023-03-16,Spring,Mumbai Hub,Wheat Bread,Bakery,Yes,293,263,0,0.0,24.2
+214,2023-02-09,Winter,Pune Center,Rice,Grain,No,227,182,0,0.0,6.6
+215,2023-04-05,Spring,Nagpur Unit,Rice,Grain,No,240,241,1,0.0,8.8
+216,2023-04-09,Spring,Mumbai Hub,Onions,Vegetable,No,117,136,19,0.0,15.9
+217,2023-03-21,Spring,Pune Center,Tomatoes,Vegetable,Yes,168,133,0,0.0,32.0
+218,2023-02-02,Winter,Pune Center,Wheat Bread,Bakery,Yes,58,59,1,0.57,23.8
+219,2023-10-18,Autumn,Nagpur Unit,Eggs,Protein,Yes,287,320,33,13.65,28.2
+220,2023-08-13,Monsoon,Mumbai Hub,Lentils,Grain,No,226,225,0,0.0,4.2
+221,2023-11-11,Autumn,Nagpur Unit,Onions,Vegetable,No,114,117,3,0.0,25.7
+222,2023-11-17,Autumn,Pune Center,Rice,Grain,No,299,315,16,0.0,32.5
+223,2023-05-07,Summer,Mumbai Hub,Wheat Bread,Bakery,Yes,188,148,0,0.0,13.4
+224,2023-06-14,Summer,Mumbai Hub,Rice,Grain,No,181,160,0,0.0,23.0
+225,2023-06-05,Summer,Mumbai Hub,Potatoes,Vegetable,Yes,28,31,3,0.64,31.1
+226,2023-04-14,Spring,Nashik Point,Tomatoes,Vegetable,Yes,218,181,0,0.0,31.1
+227,2023-09-14,Monsoon,Thane Base,Wheat Bread,Bakery,Yes,36,28,0,0.0,11.9
+228,2023-04-05,Spring,Nashik Point,Tomatoes,Vegetable,Yes,105,98,0,0.0,11.6
+229,2023-05-29,Summer,Thane Base,Potatoes,Vegetable,Yes,213,160,0,0.0,31.7
+230,2023-10-21,Autumn,Nagpur Unit,Bananas,Fruit,Yes,296,242,0,0.0,14.5
+231,2023-11-29,Autumn,Nagpur Unit,Rice,Grain,No,154,112,0,0.0,12.2
+232,2023-09-20,Monsoon,Nagpur Unit,Eggs,Protein,Yes,147,127,0,0.0,24.1
+233,2023-05-26,Summer,Nagpur Unit,Lentils,Grain,No,211,201,0,0.0,24.2
+234,2023-07-25,Monsoon,Nagpur Unit,Eggs,Protein,Yes,294,213,0,0.0,5.5
+235,2023-03-07,Spring,Pune Center,Potatoes,Vegetable,Yes,266,311,45,24.84,11.1
+236,2023-04-26,Spring,Nagpur Unit,Chicken,Protein,Yes,259,219,0,0.0,12.8
+237,2023-02-14,Winter,Nagpur Unit,Bananas,Fruit,Yes,209,163,0,0.0,17.7
+238,2023-04-24,Spring,Nagpur Unit,Onions,Vegetable,No,35,36,1,0.0,7.3
+239,2023-11-27,Autumn,Mumbai Hub,Lentils,Grain,No,79,69,0,0.0,34.2
+240,2023-12-06,Winter,Thane Base,Eggs,Protein,Yes,274,268,0,0.0,21.7
+241,2023-08-10,Monsoon,Mumbai Hub,Wheat Bread,Bakery,Yes,32,37,5,2.38,21.4
+242,2023-01-22,Winter,Nashik Point,Eggs,Protein,Yes,119,87,0,0.0,2.4
+243,2023-11-30,Autumn,Nashik Point,Onions,Vegetable,No,296,329,33,0.0,27.9
+244,2023-12-28,Winter,Mumbai Hub,Onions,Vegetable,No,97,74,0,0.0,23.7
+245,2023-12-09,Winter,Mumbai Hub,Milk,Dairy,Yes,72,77,5,2.64,8.3
+246,2023-02-09,Winter,Mumbai Hub,Milk,Dairy,Yes,36,27,0,0.0,8.0
+247,2023-04-24,Spring,Mumbai Hub,Onions,Vegetable,No,145,122,0,0.0,9.0
+248,2023-09-13,Monsoon,Nagpur Unit,Wheat Bread,Bakery,Yes,122,99,0,0.0,15.4
+249,2023-07-13,Monsoon,Nashik Point,Lentils,Grain,No,207,245,38,0.0,7.7
+250,2023-02-21,Winter,Pune Center,Milk,Dairy,Yes,217,159,0,0.0,12.0
+251,2023-06-07,Summer,Nashik Point,Eggs,Protein,Yes,71,67,0,0.0,12.6
+252,2023-12-14,Winter,Nashik Point,Potatoes,Vegetable,Yes,117,103,0,0.0,11.6
+253,2023-09-16,Monsoon,Nashik Point,Bananas,Fruit,Yes,208,158,0,0.0,8.5
+254,2023-06-26,Summer,Nagpur Unit,Milk,Dairy,Yes,85,82,0,0.0,15.1
+255,2023-12-08,Winter,Nagpur Unit,Potatoes,Vegetable,Yes,189,139,0,0.0,29.0
+256,2023-04-03,Spring,Thane Base,Rice,Grain,No,109,76,0,0.0,24.0
+257,2023-05-25,Summer,Thane Base,Chicken,Protein,Yes,62,72,10,2.96,26.6
+258,2023-06-23,Summer,Pune Center,Eggs,Protein,Yes,45,41,0,0.0,9.8
+259,2023-02-08,Winter,Pune Center,Chicken,Protein,Yes,188,206,18,8.52,25.0
+260,2023-11-30,Autumn,Mumbai Hub,Tomatoes,Vegetable,Yes,45,46,1,0.53,27.7
+261,2023-07-13,Monsoon,Pune Center,Rice,Grain,No,108,98,0,0.0,30.7
+262,2023-01-31,Winter,Mumbai Hub,Milk,Dairy,Yes,166,164,0,0.0,34.6
+263,2023-12-09,Winter,Nagpur Unit,Tomatoes,Vegetable,Yes,86,68,0,0.0,22.7
+264,2023-02-17,Winter,Nashik Point,Chicken,Protein,Yes,195,181,0,0.0,19.8
+265,2023-02-06,Winter,Nagpur Unit,Tomatoes,Vegetable,Yes,262,223,0,0.0,8.6
+266,2023-04-20,Spring,Nagpur Unit,Milk,Dairy,Yes,212,237,25,8.47,21.8
+267,2023-06-22,Summer,Mumbai Hub,Rice,Grain,No,94,84,0,0.0,31.8
+268,2023-08-24,Monsoon,Thane Base,Rice,Grain,No,190,133,0,0.0,27.4
+269,2023-08-27,Monsoon,Thane Base,Onions,Vegetable,No,123,95,0,0.0,27.5
+270,2023-06-29,Summer,Mumbai Hub,Potatoes,Vegetable,Yes,249,197,0,0.0,10.0
+271,2023-01-24,Winter,Mumbai Hub,Eggs,Protein,Yes,167,170,3,1.5,8.7
+272,2023-12-21,Winter,Pune Center,Bananas,Fruit,Yes,112,129,17,5.21,30.1
+273,2023-06-20,Summer,Nashik Point,Wheat Bread,Bakery,Yes,216,216,0,0.0,28.2
+274,2023-10-21,Autumn,Mumbai Hub,Eggs,Protein,Yes,298,356,58,25.78,20.2
+275,2023-04-17,Spring,Thane Base,Chicken,Protein,Yes,77,57,0,0.0,30.5
+276,2023-05-29,Summer,Nagpur Unit,Wheat Bread,Bakery,Yes,129,102,0,0.0,17.4
+277,2023-08-06,Monsoon,Pune Center,Rice,Grain,No,111,123,12,0.0,6.4
+278,2023-10-30,Autumn,Pune Center,Bananas,Fruit,Yes,195,145,0,0.0,15.0
+279,2023-12-30,Winter,Mumbai Hub,Rice,Grain,No,149,155,6,0.0,18.7
+280,2023-02-28,Winter,Nashik Point,Bananas,Fruit,Yes,215,195,0,0.0,9.5
+281,2023-11-21,Autumn,Nashik Point,Bananas,Fruit,Yes,41,35,0,0.0,24.1
+282,2023-07-17,Monsoon,Thane Base,Eggs,Protein,Yes,81,58,0,0.0,34.1
+283,2023-08-10,Monsoon,Nashik Point,Milk,Dairy,Yes,138,146,8,2.14,22.3
+284,2023-08-22,Monsoon,Mumbai Hub,Rice,Grain,No,201,169,0,0.0,28.2
+285,2023-02-02,Winter,Mumbai Hub,Onions,Vegetable,No,290,244,0,0.0,16.9
+286,2023-03-06,Spring,Thane Base,Tomatoes,Vegetable,Yes,79,77,0,0.0,25.2
+287,2023-01-22,Winter,Nashik Point,Milk,Dairy,Yes,44,46,2,0.95,30.8
+288,2023-04-05,Spring,Mumbai Hub,Bananas,Fruit,Yes,58,57,0,0.0,19.7
+289,2023-09-17,Monsoon,Nagpur Unit,Wheat Bread,Bakery,Yes,66,65,0,0.0,28.2
+290,2023-10-03,Autumn,Nagpur Unit,Milk,Dairy,Yes,202,228,26,4.04,33.2
+291,2023-07-30,Monsoon,Nashik Point,Wheat Bread,Bakery,Yes,293,257,0,0.0,15.8
+292,2023-03-22,Spring,Mumbai Hub,Chicken,Protein,Yes,138,130,0,0.0,13.5
+293,2023-02-16,Winter,Nagpur Unit,Wheat Bread,Bakery,Yes,284,250,0,0.0,13.2
+294,2023-04-23,Spring,Thane Base,Tomatoes,Vegetable,Yes,182,166,0,0.0,32.8
+295,2023-01-24,Winter,Mumbai Hub,Potatoes,Vegetable,Yes,285,340,55,7.5,25.0
+296,2023-09-18,Monsoon,Nashik Point,Milk,Dairy,Yes,41,30,0,0.0,8.1
+297,2023-06-26,Summer,Thane Base,Eggs,Protein,Yes,97,77,0,0.0,26.1
+298,2023-10-22,Autumn,Pune Center,Bananas,Fruit,Yes,236,266,30,17.09,34.4
+299,2023-07-30,Monsoon,Mumbai Hub,Onions,Vegetable,No,223,156,0,0.0,5.7
+300,2023-06-16,Summer,Thane Base,Lentils,Grain,No,130,119,0,0.0,25.8
+301,2023-04-05,Spring,Nashik Point,Bananas,Fruit,Yes,30,32,2,0.81,8.6
+302,2023-01-18,Winter,Nagpur Unit,Lentils,Grain,No,284,212,0,0.0,7.5
+303,2023-08-22,Monsoon,Nashik Point,Lentils,Grain,No,136,152,16,0.0,21.7
+304,2023-02-12,Winter,Nagpur Unit,Eggs,Protein,Yes,53,57,4,1.08,33.6
+305,2023-08-21,Monsoon,Pune Center,Eggs,Protein,Yes,74,85,11,3.18,17.0
+306,2023-06-17,Summer,Nagpur Unit,Eggs,Protein,Yes,217,207,0,0.0,22.0
+307,2023-06-01,Summer,Pune Center,Rice,Grain,No,194,204,10,0.0,24.2
+308,2023-10-15,Autumn,Nashik Point,Chicken,Protein,Yes,87,69,0,0.0,10.4
+309,2023-03-03,Spring,Pune Center,Potatoes,Vegetable,Yes,131,134,3,1.59,2.9
+310,2023-10-09,Autumn,Pune Center,Wheat Bread,Bakery,Yes,298,236,0,0.0,23.6
+311,2023-05-26,Summer,Nagpur Unit,Tomatoes,Vegetable,Yes,85,97,12,4.1,32.3
+312,2023-12-02,Winter,Thane Base,Potatoes,Vegetable,Yes,277,298,21,10.58,8.4
+313,2023-01-22,Winter,Thane Base,Lentils,Grain,No,230,233,3,0.0,32.3
+314,2023-05-10,Summer,Thane Base,Potatoes,Vegetable,Yes,84,80,0,0.0,28.9
+315,2023-11-23,Autumn,Nagpur Unit,Potatoes,Vegetable,Yes,158,168,10,4.16,8.9
+316,2023-09-06,Monsoon,Nashik Point,Wheat Bread,Bakery,Yes,177,210,33,18.75,26.6
+317,2023-10-18,Autumn,Nashik Point,Onions,Vegetable,No,264,239,0,0.0,11.3
+318,2023-12-20,Winter,Nashik Point,Milk,Dairy,Yes,142,165,23,7.38,29.9
+319,2023-05-03,Summer,Nashik Point,Tomatoes,Vegetable,Yes,57,64,7,2.67,27.9
+320,2023-05-17,Summer,Thane Base,Wheat Bread,Bakery,Yes,117,97,0,0.0,9.4
+321,2023-10-04,Autumn,Thane Base,Wheat Bread,Bakery,Yes,192,211,19,9.31,15.4
+322,2023-10-25,Autumn,Thane Base,Eggs,Protein,Yes,70,55,0,0.0,17.4
+323,2023-11-20,Autumn,Pune Center,Eggs,Protein,Yes,253,236,0,0.0,20.6
+324,2023-09-03,Monsoon,Mumbai Hub,Tomatoes,Vegetable,Yes,266,290,24,7.49,8.6
+325,2023-06-19,Summer,Pune Center,Bananas,Fruit,Yes,236,222,0,0.0,29.0
+326,2023-12-29,Winter,Nashik Point,Chicken,Protein,Yes,231,237,6,1.04,34.6
+327,2023-03-01,Spring,Pune Center,Wheat Bread,Bakery,Yes,131,102,0,0.0,27.0
+328,2023-05-24,Summer,Mumbai Hub,Eggs,Protein,Yes,74,67,0,0.0,23.6
+329,2023-09-09,Monsoon,Nagpur Unit,Lentils,Grain,No,271,232,0,0.0,20.6
+330,2023-07-07,Monsoon,Pune Center,Milk,Dairy,Yes,86,73,0,0.0,5.0
+331,2023-10-24,Autumn,Thane Base,Eggs,Protein,Yes,92,76,0,0.0,4.5
+332,2023-02-04,Winter,Thane Base,Potatoes,Vegetable,Yes,247,210,0,0.0,31.7
+333,2023-07-18,Monsoon,Mumbai Hub,Eggs,Protein,Yes,29,23,0,0.0,12.3
+334,2023-03-09,Spring,Nagpur Unit,Chicken,Protein,Yes,135,124,0,0.0,12.3
+335,2023-02-25,Winter,Thane Base,Chicken,Protein,Yes,187,169,0,0.0,22.1
+336,2023-04-02,Spring,Pune Center,Potatoes,Vegetable,Yes,294,342,48,18.98,22.4
+337,2023-10-13,Autumn,Mumbai Hub,Rice,Grain,No,174,182,8,0.0,13.1
+338,2023-12-18,Winter,Thane Base,Lentils,Grain,No,20,18,0,0.0,21.4
+339,2023-11-21,Autumn,Nashik Point,Wheat Bread,Bakery,Yes,119,107,0,0.0,2.8
+340,2023-10-12,Autumn,Mumbai Hub,Wheat Bread,Bakery,Yes,128,131,3,0.98,16.3
+341,2023-01-04,Winter,Mumbai Hub,Rice,Grain,No,112,110,0,0.0,28.5
+342,2023-10-17,Autumn,Nashik Point,Potatoes,Vegetable,Yes,236,229,0,0.0,20.3
+343,2023-03-16,Spring,Thane Base,Milk,Dairy,Yes,94,91,0,0.0,7.9
+344,2023-07-13,Monsoon,Nashik Point,Potatoes,Vegetable,Yes,166,157,0,0.0,29.1
+345,2023-10-12,Autumn,Mumbai Hub,Lentils,Grain,No,296,293,0,0.0,4.1
+346,2023-06-18,Summer,Pune Center,Lentils,Grain,No,161,137,0,0.0,29.3
+347,2023-01-05,Winter,Nagpur Unit,Bananas,Fruit,Yes,266,301,35,4.06,9.5
+348,2023-10-21,Autumn,Nagpur Unit,Eggs,Protein,Yes,239,229,0,0.0,27.5
+349,2023-09-19,Monsoon,Mumbai Hub,Rice,Grain,No,262,217,0,0.0,34.6
+350,2023-11-20,Autumn,Pune Center,Eggs,Protein,Yes,202,233,31,12.12,31.3
+351,2023-03-10,Spring,Nagpur Unit,Rice,Grain,No,198,154,0,0.0,28.4
+352,2023-04-30,Spring,Nagpur Unit,Chicken,Protein,Yes,201,224,23,2.63,15.0
+353,2023-12-28,Winter,Nashik Point,Lentils,Grain,No,264,234,0,0.0,17.8
+354,2023-10-20,Autumn,Nagpur Unit,Wheat Bread,Bakery,Yes,158,181,23,11.61,30.8
+355,2023-06-13,Summer,Nagpur Unit,Wheat Bread,Bakery,Yes,187,201,14,1.55,28.2
+356,2023-07-15,Monsoon,Pune Center,Bananas,Fruit,Yes,227,259,32,5.93,18.9
+357,2023-03-20,Spring,Nagpur Unit,Wheat Bread,Bakery,Yes,271,190,0,0.0,25.0
+358,2023-04-15,Spring,Pune Center,Eggs,Protein,Yes,124,96,0,0.0,17.5
+359,2023-10-22,Autumn,Thane Base,Potatoes,Vegetable,Yes,202,221,19,3.72,14.4
+360,2023-01-11,Winter,Nashik Point,Wheat Bread,Bakery,Yes,222,264,42,12.14,14.1
+361,2023-08-06,Monsoon,Nagpur Unit,Milk,Dairy,Yes,81,76,0,0.0,26.5
+362,2023-05-19,Summer,Mumbai Hub,Tomatoes,Vegetable,Yes,117,110,0,0.0,33.1
+363,2023-09-06,Monsoon,Nagpur Unit,Onions,Vegetable,No,109,116,7,0.0,22.3
+364,2023-05-09,Summer,Nagpur Unit,Bananas,Fruit,Yes,136,120,0,0.0,34.8
+365,2023-09-12,Monsoon,Nashik Point,Chicken,Protein,Yes,66,60,0,0.0,19.4
+366,2023-03-28,Spring,Thane Base,Chicken,Protein,Yes,177,177,0,0.0,6.4
+367,2023-03-29,Spring,Nashik Point,Milk,Dairy,Yes,268,293,25,4.68,17.2
+368,2023-04-23,Spring,Nagpur Unit,Onions,Vegetable,No,194,159,0,0.0,14.4
+369,2023-09-30,Monsoon,Nagpur Unit,Potatoes,Vegetable,Yes,245,258,13,7.54,4.1
+370,2023-06-14,Summer,Mumbai Hub,Potatoes,Vegetable,Yes,142,131,0,0.0,17.6
+371,2023-11-04,Autumn,Thane Base,Onions,Vegetable,No,107,80,0,0.0,28.2
+372,2023-12-30,Winter,Thane Base,Chicken,Protein,Yes,57,64,7,2.47,14.8
+373,2023-05-20,Summer,Nagpur Unit,Onions,Vegetable,No,130,137,7,0.0,33.3
+374,2023-11-09,Autumn,Pune Center,Chicken,Protein,Yes,293,324,31,6.67,25.9
+375,2023-01-15,Winter,Thane Base,Milk,Dairy,Yes,253,273,20,8.44,18.3
+376,2023-06-02,Summer,Nagpur Unit,Potatoes,Vegetable,Yes,26,31,5,1.97,7.9
+377,2023-04-24,Spring,Pune Center,Bananas,Fruit,Yes,278,314,36,10.41,3.8
+378,2023-11-17,Autumn,Pune Center,Wheat Bread,Bakery,Yes,152,158,6,0.9,25.6
+379,2023-04-20,Spring,Pune Center,Rice,Grain,No,141,134,0,0.0,24.7
+380,2023-09-04,Monsoon,Mumbai Hub,Onions,Vegetable,No,265,231,0,0.0,24.0
+381,2023-09-30,Monsoon,Pune Center,Chicken,Protein,Yes,154,109,0,0.0,17.0
+382,2023-04-03,Spring,Nashik Point,Tomatoes,Vegetable,Yes,84,90,6,3.1,17.2
+383,2023-04-01,Spring,Nagpur Unit,Chicken,Protein,Yes,300,300,0,0.0,13.0
+384,2023-09-29,Monsoon,Nashik Point,Tomatoes,Vegetable,Yes,190,145,0,0.0,20.5
+385,2023-08-29,Monsoon,Mumbai Hub,Lentils,Grain,No,31,31,0,0.0,9.4
+386,2023-03-03,Spring,Pune Center,Lentils,Grain,No,32,28,0,0.0,15.8
+387,2023-10-18,Autumn,Nashik Point,Rice,Grain,No,297,288,0,0.0,21.9
+388,2023-06-23,Summer,Nagpur Unit,Chicken,Protein,Yes,253,198,0,0.0,12.0
+389,2023-01-19,Winter,Thane Base,Lentils,Grain,No,282,336,54,0.0,10.1
+390,2023-05-07,Summer,Nagpur Unit,Tomatoes,Vegetable,Yes,95,68,0,0.0,31.4
+391,2023-04-21,Spring,Thane Base,Potatoes,Vegetable,Yes,55,64,9,1.99,26.7
+392,2023-08-26,Monsoon,Nashik Point,Lentils,Grain,No,261,275,14,0.0,19.0
+393,2023-05-23,Summer,Mumbai Hub,Tomatoes,Vegetable,Yes,173,182,9,4.86,11.8
+394,2023-04-07,Spring,Pune Center,Lentils,Grain,No,174,196,22,0.0,15.8
+395,2023-08-06,Monsoon,Thane Base,Rice,Grain,No,147,163,16,0.0,27.7
+396,2023-11-01,Autumn,Nashik Point,Onions,Vegetable,No,147,141,0,0.0,3.5
+397,2023-09-08,Monsoon,Pune Center,Rice,Grain,No,227,228,1,0.0,9.8
+398,2023-02-10,Winter,Nashik Point,Lentils,Grain,No,241,214,0,0.0,12.0
+399,2023-03-06,Spring,Nashik Point,Eggs,Protein,Yes,50,57,7,4.0,23.2
+400,2023-09-01,Monsoon,Mumbai Hub,Potatoes,Vegetable,Yes,215,162,0,0.0,31.3
