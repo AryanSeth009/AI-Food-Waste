@@ -119,8 +119,8 @@ export default function DataAnalytics() {
     };
 
     return (
-        <div className="bg-[#1c1a16] border border-[#3a3328] rounded-2xl p-6 flex flex-col shadow-2xl backdrop-blur-xl bg-opacity-70 h-[calc(100vh-8rem)] relative z-10 overflow-y-auto w-full custom-scrollbar">
-            <div className="mb-6 flex justify-between items-center">
+        <div className="bg-[#1c1a16] border border-[#3a3328] rounded-2xl p-8 flex flex-col shadow-2xl backdrop-blur-xl bg-opacity-70 h-[calc(100vh-8rem)] relative z-10 overflow-y-auto w-full custom-scrollbar">
+            <div className="mb-8 flex justify-between items-center">
                 <div>
                     <h2 className="text-xl font-bold font-sans text-[#f5efe6] tracking-tight flex items-center gap-2">
                         <Grid className="w-5 h-5 text-[#c4a882]" />
@@ -131,21 +131,21 @@ export default function DataAnalytics() {
             </div>
 
             {/* Summary Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div className="bg-[#141210] border border-[#3a3328] p-4 rounded-xl shadow-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                <div className="bg-[#141210] border border-[#3a3328] p-6 rounded-xl shadow-lg">
                     <p className="text-[#c4a882]/60 text-xs mb-1 uppercase tracking-wider font-semibold">Total Historical Wastage</p>
                     <p className="text-[#f5efe6] font-medium flex items-baseline gap-1">
                         <span className="text-3xl font-bold">{summary.totalWaste.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
                         <span className="text-sm text-[#c4a882]/60">kg</span>
                     </p>
                 </div>
-                <div className="bg-[#141210] border border-[#3a3328] p-4 rounded-xl shadow-lg">
+                <div className="bg-[#141210] border border-[#3a3328] p-6 rounded-xl shadow-lg">
                     <p className="text-[#c4a882]/60 text-xs mb-1 uppercase tracking-wider font-semibold">Total Events Recorded</p>
                     <p className="text-[#f5efe6] font-medium flex items-baseline gap-1">
                         <span className="text-3xl font-bold">{summary.totalEvents.toLocaleString()}</span>
                     </p>
                 </div>
-                <div className="bg-[#141210] border border-[#3a3328] p-4 rounded-xl shadow-lg">
+                <div className="bg-[#141210] border border-[#3a3328] p-6 rounded-xl shadow-lg">
                     <p className="text-[#c4a882]/60 text-xs mb-1 uppercase tracking-wider font-semibold">Avg. Wastage per Event</p>
                     <p className="text-[#f5efe6] font-medium flex items-baseline gap-1">
                         <span className="text-3xl font-bold">{summary.avgWaste.toLocaleString(undefined, { maximumFractionDigits: 1 })}</span>
@@ -155,11 +155,11 @@ export default function DataAnalytics() {
             </div>
 
             {/* Charts Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-8">
 
                 {/* Food Type Bar Chart */}
-                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-5 shadow-lg">
-                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-4">
+                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-6 shadow-lg">
+                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-6">
                         <BarChart3 className="w-4 h-4 text-[#c4a882]" />
                         Wastage by Food Type
                     </h3>
@@ -195,8 +195,8 @@ export default function DataAnalytics() {
                 </div>
 
                 {/* Event Type Pie Chart */}
-                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-5 shadow-lg">
-                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-4">
+                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-6 shadow-lg">
+                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-6">
                         <PieChartIcon className="w-4 h-4 text-[#c4a882]" />
                         Wastage by Event Type
                     </h3>
@@ -233,8 +233,8 @@ export default function DataAnalytics() {
                 </div>
 
                 {/* Storage Conditions Bar Chart - Horizontal */}
-                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-5 shadow-lg lg:col-span-2">
-                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-4">
+                <div className="bg-[#141210] border border-[#3a3328] rounded-xl p-6 shadow-lg lg:col-span-2">
+                    <h3 className="text-[#f5efe6] font-medium flex items-center gap-2 mb-6">
                         <BarChart3 className="w-4 h-4 text-[#c4a882] rotate-90" />
                         Impact of Storage Conditions
                     </h3>

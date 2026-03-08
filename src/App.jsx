@@ -22,7 +22,7 @@ function App() {
 
       {/* Top Navigation */}
       <nav className="border-b border-[#3a3328] bg-[#1c1a16]/80 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex justify-between items-center h-16">
             <div className="flex shrink-0 items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-linear-to-br from-[#c4a882] to-[#9b8566] p-1.5 flex items-center justify-center shadow-lg shadow-[#c4a882]/20">
@@ -80,7 +80,7 @@ function App() {
       </nav>
 
       {/* Main Content Dashboard */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 h-[calc(100vh-4rem)] flex flex-col">
+      <main className="w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-8 h-[calc(100vh-4rem)] flex flex-col">
         {activeTab === "operations" ? (
           <>
             <div className="mb-6 z-10">
